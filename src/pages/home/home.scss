@@ -11,4 +11,12 @@ page-home {
 		flex: 1;
 	}
 
+	.cardIsntInDeck{
+		color: red !important;
+	}
+
+	.cardIsInPlayerHand{
+		color: green !important;
+	}
+
 }

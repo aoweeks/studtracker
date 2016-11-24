@@ -17,22 +17,27 @@
 <ion-content>
 
 	<ion-grid class="card-grid">
-		<ion-row *ngFor="let suit of suits" class="suit-row">
-			<ion-col *ngFor="let value of values">
-				{{ value + suit }}
+		<ion-row *ngFor="let suit of suits; let suitPos = index" class="suit-row">
+			<ion-col *ngFor="let rank of ranks; let rankPos = index">
+				<a (click)="deck.toggleCardInDeck(suitPos, rankPos)"
+				   (press)="deck.toggleCardInPlayerHand(suitPos, rankPos)">
+				   	<span [innerHtml]='rank + suit'
+				   		[ngClass]="{ cardIsntInDeck : getCardClass(suitPos, rankPos) != 'in-the-deck',
+				   		cardIsInPlayerHand : getCardClass(suitPos, rankPos) == 'in-player-hand' }"></span>
+				</a>
 			</ion-col>
-			<ion-col>
-				25%
+			<ion-col class="suit-odds">
+				{{ deck.getSuitOdds(suitPos) | number : '1.1-1' }}%
 			</ion-col>
 		</ion-row>
 	</ion-grid>
 	<ion-grid>
 		<ion-row>
-			<ion-col *ngFor="let value of values" class="value-odds">
-				25%
+			<ion-col *ngFor="let rank of ranks; let rankPos = index" class="rank-odds">
+				{{ deck.getRankOdds(rankPos) | number : '1.1-1' }}%
 			</ion-col>
 			<ion-col>
-				<button ion-button icon-only (click)="refreshDeck()">
+				<button ion-button icon-only (click)="deck.resetDeck()">
 		    		<ion-icon name="refresh">
 		    		</ion-icon>
 				</button>
