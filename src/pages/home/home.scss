@@ -1,6 +1,14 @@
 page-home {
 
-	.suit-row{
-		height: 25%;
+	.card-grid{
+		display: flex;
+		flex-direction: column;
+		height: 85%;
 	}
+
+
+	.suit-row{
+		flex: 1;
+	}
+
 }
