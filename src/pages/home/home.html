@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Stud Calculator
+    </ion-title>
+
+    <ion-buttons end>
+    	<button ion-button icon-only (click)="openSettingsPage()">
+    		<ion-icon name="settings">
+    		</ion-icon>
+		</button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-grid class="card-grid">
+		<ion-row *ngFor="let suit of suits" class="suit-row">
+			<ion-col *ngFor="let value of values">
+				{{ value + suit }}
+			</ion-col>
+			<ion-col>
+				25%
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-grid>
+		<ion-row>
+			<ion-col *ngFor="let value of values" class="value-odds">
+				25%
+			</ion-col>
+			<ion-col>
+				<button ion-button icon-only (click)="refreshDeck()">
+		    		<ion-icon name="refresh">
+		    		</ion-icon>
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>
