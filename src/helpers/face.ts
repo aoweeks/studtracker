@@ -484,16 +484,86 @@ export class FaceHelper {
 				</svg>`],
 
 				//J
-				[``],
+				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 26.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">J</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 333.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">J</text>
+				</g>
+				<g id="Face">
+					<g>
+						<text transform="matrix(1 0 0 1 148.7632 326.7578)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="180">J</text>
+					</g>
+				</g>
+				</svg>`],
 
 				//Q
-				[``],
+				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">Q</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">Q</text>
+				</g>
+				<g id="Face">
+					<g>
+						<text transform="matrix(1 0 0 1 136.7632 326.7578)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="180">Q</text>
+					</g>
+				</g>
+				</svg>`],
 
 				//K
-				[``],
+				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 22.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">K</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 337.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">K</text>
+				</g>
+				<g id="Face">
+					<g>
+						<text transform="matrix(1 0 0 1 136.7632 326.7578)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="180">K</text>
+					</g>
+				</g>
+				</svg>`],
 
 				//A
-				[``]
+				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 24.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">A</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 335.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">A</text>
+				</g>
+				<g id="Face">
+					<polygon id="Pip_8_" class="diamond-blue" fill="#1A1AFF" points="180,169.907 234.729,252.001 180.002,334.094 125.27,252.001 	"/>
+				</g>
+				</svg>`]
 			 ]);
 	}
 }
