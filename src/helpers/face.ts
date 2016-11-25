@@ -275,7 +275,7 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="312.436,398.898 336.117,388.375 312.436,357.852 298.753,378.375 	"/>
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
 					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
 					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">2</text>
 					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">2</text>
@@ -308,25 +308,180 @@ export class FaceHelper {
 				</svg>`],
 				
 				//4
-				[``],
+				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 21.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">4</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 338.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">4</text>
+				</g>
+				<g id="Face">
+					<polygon id="Pip" class="diamond-blue" fill="#1A1AFF" points="115.833,44.88 88.468,85.927 115.831,126.973 143.197,85.927 	"/>
+					<polygon id="Pip_2_" class="diamond-blue" fill="#1A1AFF" points="244.168,459.12 271.532,418.073 244.169,377.027 216.803,418.073 	"/>
+					<polygon id="Pip_5_" class="diamond-blue" fill="#1A1AFF" points="115.833,459.12 88.468,418.073 115.831,377.027 143.197,418.073 	"/>
+					<polygon id="Pip_4_" class="diamond-blue" fill="#1A1AFF" points="244.168,44.88 271.532,85.927 244.169,126.973 216.803,85.927 	"/>
+				</g>
+				</svg>`],
 
 				//5
-				[``],
+				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 337.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">5</text>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 22.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">5</text>
+				</g>
+				<g id="Face">
+					<polygon id="Pip" class="diamond-blue" fill="#1A1AFF" points="115.833,44.88 88.468,85.927 115.831,126.973 143.197,85.927 	"/>
+					<polygon id="Pip_8_" class="diamond-blue" fill="#1A1AFF" points="180,210.954 207.363,252 180.001,293.047 152.635,252 	"/>
+					<polygon id="Pip_2_" class="diamond-blue" fill="#1A1AFF" points="244.168,459.12 271.532,418.073 244.169,377.027 216.803,418.073 	"/>
+					<polygon id="Pip_5_" class="diamond-blue" fill="#1A1AFF" points="115.833,459.12 88.468,418.073 115.831,377.027 143.197,418.073 	"/>
+					<polygon id="Pip_4_" class="diamond-blue" fill="#1A1AFF" points="244.168,44.88 271.532,85.927 244.169,126.973 216.803,85.927 	"/>
+				</g>
+				</svg>`],
 
 				//6
-				[``],
+				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">6</text>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">6</text>
+				</g>
+				<g id="Face">
+					<polygon id="Pip" class="diamond-blue" fill="#1A1AFF" points="115.833,44.88 88.468,85.927 115.831,126.973 143.197,85.927 	"/>
+					<polygon id="Pip_1_" class="diamond-blue" fill="#1A1AFF" points="115.833,210.954 88.468,252 115.831,293.047 143.197,252 	"/>
+					<polygon id="Pip_8_" class="diamond-blue" fill="#1A1AFF" points="244.168,210.954 271.532,252 244.169,293.047 216.803,252 	"/>
+					<polygon id="Pip_2_" class="diamond-blue" fill="#1A1AFF" points="244.168,459.12 271.532,418.073 244.169,377.027 216.803,418.073 	"/>
+					<polygon id="Pip_5_" class="diamond-blue" fill="#1A1AFF" points="115.833,459.12 88.468,418.073 115.831,377.027 143.197,418.073 	"/>
+					<polygon id="Pip_4_" class="diamond-blue" fill="#1A1AFF" points="244.168,44.88 271.532,85.927 244.169,126.973 216.803,85.927 	"/>
+				</g>
+				</svg>`],
 
 				//7
-				[``],
+				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 333.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">7</text>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 26.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">7</text>
+				</g>
+				<g id="Face">
+					<polygon id="Pip" class="diamond-blue" fill="#1A1AFF" points="115.833,44.88 88.468,85.927 115.831,126.973 143.197,85.927 	"/>
+					<polygon id="Pip_1_" class="diamond-blue" fill="#1A1AFF" points="115.833,210.954 88.468,252 115.831,293.047 143.197,252 	"/>
+					<polygon id="Pip_8_" class="diamond-blue" fill="#1A1AFF" points="244.168,210.954 271.532,252 244.169,293.047 216.803,252 	"/>
+					<polygon id="Pip_2_" class="diamond-blue" fill="#1A1AFF" points="244.168,459.12 271.532,418.073 244.169,377.027 216.803,418.073 	"/>
+					<polygon id="Pip_5_" class="diamond-blue" fill="#1A1AFF" points="115.833,459.12 88.468,418.073 115.831,377.027 143.197,418.073 	"/>
+					<polygon id="Pip_4_" class="diamond-blue" fill="#1A1AFF" points="244.168,44.88 271.532,85.927 244.169,126.973 216.803,85.927 	"/>
+					<polygon id="Pip_3_" class="diamond-blue" fill="#1A1AFF" points="179.999,127.917 152.635,168.964 179.998,210.01 207.363,168.964 	"/>
+					<polygon id="Pip_6_" class="diamond-blue" fill="#1A1AFF" points="179.999,127.917 152.635,168.964 179.998,210.01 207.363,168.964 	"/>
+				</g>
+				</svg>`],
 
 				//8
-				[``],
+				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">8</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">8</text>
+				</g>
+				<g id="Face">
+					<polygon id="Pip" class="diamond-blue" fill="#1A1AFF" points="115.833,44.88 88.468,85.927 115.831,126.973 143.197,85.927 	"/>
+					<polygon id="Pip_1_" class="diamond-blue" fill="#1A1AFF" points="115.833,210.954 88.468,252 115.831,293.047 143.197,252 	"/>
+					<polygon id="Pip_8_" class="diamond-blue" fill="#1A1AFF" points="244.168,210.954 271.532,252 244.169,293.047 216.803,252 	"/>
+					<polygon id="Pip_2_" class="diamond-blue" fill="#1A1AFF" points="244.168,459.12 271.532,418.073 244.169,377.027 216.803,418.073 	"/>
+					<polygon id="Pip_5_" class="diamond-blue" fill="#1A1AFF" points="115.833,459.12 88.468,418.073 115.831,377.027 143.197,418.073 	"/>
+					<polygon id="Pip_4_" class="diamond-blue" fill="#1A1AFF" points="244.168,44.88 271.532,85.927 244.169,126.973 216.803,85.927 	"/>
+					<polygon id="Pip_3_" class="diamond-blue" fill="#1A1AFF" points="179.999,127.917 152.635,168.964 179.998,210.01 207.363,168.964 	"/>
+					<polygon id="Pip_7_" class="diamond-blue" fill="#1A1AFF" points="180.001,376.084 207.365,335.036 180.002,293.99 152.636,335.036 	"/>
+				</g>
+				</svg>`],
 
 				//9
-				[``],
+				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">9</text>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">9</text>
+				</g>
+				<g id="Face">
+					<polygon id="Pip" class="diamond-blue" fill="#1A1AFF" points="115.833,44.88 88.468,85.927 115.831,126.973 143.197,85.927 	"/>
+					<polygon id="Pip_1_" class="diamond-blue" fill="#1A1AFF" points="115.833,155.596 88.468,196.643 115.831,237.689 143.197,196.643 	"/>
+					<polygon id="Pip_6_" class="diamond-blue" fill="#1A1AFF" points="244.168,348.404 271.532,307.357 244.169,266.311 216.803,307.357 	"/>
+					<polygon id="Pip_9_" class="diamond-blue" fill="#1A1AFF" points="115.833,348.404 88.468,307.357 115.831,266.311 143.197,307.357 	"/>
+					<polygon id="Pip_8_" class="diamond-blue" fill="#1A1AFF" points="244.168,155.596 271.532,196.643 244.169,237.689 216.803,196.643 	"/>
+					<polygon id="Pip_2_" class="diamond-blue" fill="#1A1AFF" points="244.168,459.12 271.532,418.073 244.169,377.027 216.803,418.073 	"/>
+					<polygon id="Pip_5_" class="diamond-blue" fill="#1A1AFF" points="115.833,459.12 88.468,418.073 115.831,377.027 143.197,418.073 	"/>
+					<polygon id="Pip_4_" class="diamond-blue" fill="#1A1AFF" points="244.168,44.88 271.532,85.927 244.169,126.973 216.803,85.927 	"/>
+					<polygon id="Pip_3_" class="diamond-blue" fill="#1A1AFF" points="180,293.047 207.365,252 180.001,210.953 152.635,252 	"/>
+				</g>
+				</svg>`],
 
 				//10
-				[``],
+				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+				<g id="Card">
+					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+				</g>
+				<g id="Corners">
+					<polygon id="Suit_3_" class="diamond-blue" fill="#1A1AFF" points="322.436,408.898 336.117,388.375 322.436,367.852 308.753,388.375 	"/>
+					<polygon id="Suit_2_" class="diamond-blue" fill="#1A1AFF" points="37.564,95.102 23.882,115.625 37.564,136.148 51.247,115.625 	"/>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 11.1826 76.3516)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">10</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 348.8174 427.6484)" class="diamond-blue" fill="#1A1AFF" font-family="'FjallaOne'" font-size="57.6">10</text>
+				</g>
+				<g id="Face">
+					<polygon id="Pip" class="diamond-blue" fill="#1A1AFF" points="115.833,44.88 88.468,85.927 115.831,126.973 143.197,85.927 	"/>
+					<polygon id="Pip_1_" class="diamond-blue" fill="#1A1AFF" points="115.833,155.596 88.468,196.643 115.831,237.689 143.197,196.643 	"/>
+					<polygon id="Pip_6_" class="diamond-blue" fill="#1A1AFF" points="244.168,348.404 271.532,307.357 244.169,266.311 216.803,307.357 	"/>
+					<polygon id="Pip_9_" class="diamond-blue" fill="#1A1AFF" points="115.833,348.404 88.468,307.357 115.831,266.311 143.197,307.357 	"/>
+					<polygon id="Pip_8_" class="diamond-blue" fill="#1A1AFF" points="244.168,155.596 271.532,196.643 244.169,237.689 216.803,196.643 	"/>
+					<polygon id="Pip_2_" class="diamond-blue" fill="#1A1AFF" points="244.168,459.12 271.532,418.073 244.169,377.027 216.803,418.073 	"/>
+					<polygon id="Pip_5_" class="diamond-blue" fill="#1A1AFF" points="115.833,459.12 88.468,418.073 115.831,377.027 143.197,418.073 	"/>
+					<polygon id="Pip_4_" class="diamond-blue" fill="#1A1AFF" points="244.168,44.88 271.532,85.927 244.169,126.973 216.803,85.927 	"/>
+					<polygon id="Pip_3_" class="diamond-blue" fill="#1A1AFF" points="180,182.332 207.365,141.285 180.001,100.238 152.635,141.285 	"/>
+					<polygon id="Pip_10_" class="diamond-blue" fill="#1A1AFF" points="180,321.668 152.635,362.715 179.999,403.762 207.365,362.715 	"/>
+				</g>
+				</svg>`],
 
 				//J
 				[``],
