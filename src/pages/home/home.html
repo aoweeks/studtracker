@@ -5,10 +5,17 @@
     </ion-title>
 
     <ion-buttons end>
+    	
     	<button ion-button icon-only (click)="openSettingsPage()">
     		<ion-icon name="settings">
     		</ion-icon>
 		</button>
+
+		<button ion-button icon-only (click)="deck.resetDeck()">
+    		<ion-icon name="refresh">
+    		</ion-icon>
+		</button>
+    
     </ion-buttons>
 
   </ion-navbar>
@@ -40,7 +47,7 @@
 				{{ deck.getRankOdds(rankPos) | number : '1.1-1' }}%
 			</ion-col>
 			<ion-col>
-				<button ion-button icon-only (click)="deck.resetDeck()">
+				<button ion-button icon-only (click)="openStatsPage()">
 		    		<ion-icon name="refresh">
 		    		</ion-icon>
 				</button>

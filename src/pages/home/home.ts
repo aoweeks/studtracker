@@ -10,7 +10,6 @@ import { SettingsData } from '../../providers/settings-data';
 
 import { DeckModel } from '../../models/deck';
 
-import { SafePipe } from '../../pipes/safe';
 
 @Component({
   selector: 'page-home',

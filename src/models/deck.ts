@@ -5,7 +5,6 @@ export class DeckModel {
 
 
 
-	private cardStatus: string[][];
 	private cards: any[][] = new Array(0);
 
 	private suitOdds: number[] = [];

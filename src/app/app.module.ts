@@ -24,7 +24,8 @@ import { SafePipe } from '../pipes/safe';
   entryComponents: [
     MyApp,
     HomePage,
-    SettingsPage
+    SettingsPage,
+    StatsPage
   ],
   providers: [DeckModel, SettingsData, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
