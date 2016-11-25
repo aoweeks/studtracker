@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class SettingsData {
 
-  public fourColourDeck: boolean = true;
+  private fourColourDeck: boolean = true;
 
   constructor() {
 
@@ -17,6 +17,10 @@ export class SettingsData {
 
   getDeckColours(): boolean{
   	return this.fourColourDeck;
+  }
+
+  setDeckColours(isFourColours: boolean): void {
+  	this.fourColourDeck = isFourColours;
   }
 
 }
