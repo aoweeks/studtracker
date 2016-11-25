@@ -33,20 +33,18 @@ page-home {
 
 
 	.cardIsntInDeck{
-		color: red !important;
 
 
 		#Background{
-			fill: #aaa;
+			fill: #bbb;
 		}
 
 		.club-colour{
-			fill: #444;
+			fill: #888;
 		}
 	}
 
 	.cardIsInPlayerHand{
-		color: green !important;
 
 		#Background{
 			stroke: yellow;
