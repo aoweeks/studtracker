@@ -18,12 +18,14 @@
 
 	<ion-grid class="card-grid">
 		<ion-row *ngFor="let suit of suits; let suitPos = index" class="suit-row">
-			<ion-col *ngFor="let rank of ranks; let rankPos = index">
+			<ion-col *ngFor="let rank of ranks; let rankPos = index" class="card-face-big-wrapper">
 				<a (click)="deck.toggleCardInDeck(suitPos, rankPos)"
-				   (press)="deck.toggleCardInPlayerHand(suitPos, rankPos)">
-				   	<span [innerHtml]='rank + suit'
-				   		[ngClass]="{ cardIsntInDeck : getCardClass(suitPos, rankPos) != 'in-the-deck',
-				   		cardIsInPlayerHand : getCardClass(suitPos, rankPos) == 'in-player-hand' }"></span>
+				    (press)="deck.toggleCardInPlayerHand(suitPos, rankPos)" 
+    				[innerHtml]='deck.getCardFace(suitPos, rankPos) | safe'
+				   	[ngClass]="{ cardIsntInDeck : deck.getCardStatus(suitPos, rankPos) != 'in-the-deck',
+				   		cardIsInPlayerHand : deck.getCardStatus(suitPos, rankPos) == 'in-player-hand' }"
+				 		>
+
 				</a>
 			</ion-col>
 			<ion-col class="suit-odds">

@@ -5,12 +5,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SettingsPage } from '../pages/settings/settings';
 import { DeckModel } from '../models/deck';
+import { SafePipe } from '../pipes/safe';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    SettingsPage
+    SettingsPage,
+    SafePipe
   ],
   imports: [
     IonicModule.forRoot(MyApp)

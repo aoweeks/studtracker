@@ -6,6 +6,8 @@ import { SettingsPage } from '../settings/settings';
 
 import { DeckModel } from '../../models/deck';
 
+import { SafePipe } from '../../pipes/safe';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -29,8 +31,7 @@ export class HomePage {
   	console.log(data);
   }
 
-  getCardClass(suitPos: number, rankPos: number): string {
-  	return this.deck.getCardStatus(suitPos, rankPos);
-  }
+
+ 
 
 }
