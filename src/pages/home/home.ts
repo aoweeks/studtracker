@@ -4,6 +4,8 @@ import { NavController } from 'ionic-angular';
 
 import { SettingsPage } from '../settings/settings';
 
+import { SettingsData } from '../../providers/settings-data';
+
 import { DeckModel } from '../../models/deck';
 
 import { SafePipe } from '../../pipes/safe';
@@ -20,7 +22,7 @@ export class HomePage {
 
   public fourColourDeck: boolean = false;
 
-  constructor(public navCtrl: NavController, public deck: DeckModel) {
+  constructor(public navCtrl: NavController, public deck: DeckModel, public settingsData: SettingsData) {
     
   }
 
@@ -29,8 +31,8 @@ export class HomePage {
   }
 
   //DEV PURPOSES ONLY
-  consolelog(data){
-  	console.log(data);
+  consolelog(){
+  	console.log();
   }
 
 

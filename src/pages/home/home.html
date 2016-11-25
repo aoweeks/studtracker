@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="this-background">
     <ion-title>
-      Stud Calculator
+      YOUR HAND:
     </ion-title>
 
     <ion-buttons end>
@@ -24,8 +24,8 @@
     				[innerHtml]='deck.getCardFace(suitPos, rankPos) | safe'
 				   	[ngClass]="{ cardIsntInDeck : deck.getCardStatus(suitPos, rankPos) != 'in-the-deck',
 				   		cardIsInPlayerHand : deck.getCardStatus(suitPos, rankPos) == 'in-player-hand',
-				   		twoColourDeck : !fourColourDeck }"
-				 		>
+				   		twoColourDeck : settingsData.fourColourDeck != true }"
+				 	>
 
 				</a>
 			</ion-col>

@@ -15,7 +15,7 @@
 
 <ion-content>
 	<ion-list no-lines>
-		<ion-list radio-group>
+		<ion-list radio-group [(ngModel)]="settingsData.fourColourDeck">
 			
 			<ion-list-header>
 				Deck Style
@@ -23,14 +23,15 @@
 
 			<ion-item>
 				<ion-label>Two Colour</ion-label>
-				<ion-radio checked="true" value="2"></ion-radio>
+				<ion-radio value="false"></ion-radio>
 			</ion-item>
 
 			<ion-item>
 				<ion-label>Four Colour</ion-label>
-				<ion-radio value="4"></ion-radio>
+				<ion-radio value="true"></ion-radio>
 			</ion-item>
 
 		</ion-list>
 	</ion-list>
+
 </ion-content>

@@ -4,6 +4,7 @@ import { TranslateModule } from 'ng2-translate/ng2-translate';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SettingsPage } from '../pages/settings/settings';
+import { SettingsData } from '../providers/settings-data';
 import { DeckModel } from '../models/deck';
 import { SafePipe } from '../pipes/safe';
 
@@ -23,6 +24,6 @@ import { SafePipe } from '../pipes/safe';
     HomePage,
     SettingsPage
   ],
-  providers: [DeckModel, {provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [DeckModel, SettingsData, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}
