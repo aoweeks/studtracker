@@ -4,6 +4,7 @@ import { TranslateModule } from 'ng2-translate/ng2-translate';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SettingsPage } from '../pages/settings/settings';
+import { StatsPage } from '../pages/stats/stats';
 import { SettingsData } from '../providers/settings-data';
 import { DeckModel } from '../models/deck';
 import { SafePipe } from '../pipes/safe';
@@ -13,6 +14,7 @@ import { SafePipe } from '../pipes/safe';
     MyApp,
     HomePage,
     SettingsPage,
+    StatsPage,
     SafePipe
   ],
   imports: [

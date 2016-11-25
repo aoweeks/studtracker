@@ -4,6 +4,8 @@ import { NavController } from 'ionic-angular';
 
 import { SettingsPage } from '../settings/settings';
 
+import { StatsPage } from '../stats/stats';
+
 import { SettingsData } from '../../providers/settings-data';
 
 import { DeckModel } from '../../models/deck';
@@ -28,6 +30,10 @@ export class HomePage {
 
   openSettingsPage(): void {
   	this.navCtrl.push(SettingsPage);
+  }
+
+  openStatsPage(): void {
+  	this.navCtrl.push(StatsPage);
   }
 
   //DEV PURPOSES ONLY
