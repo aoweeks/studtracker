@@ -23,7 +23,8 @@
 				    (press)="deck.toggleCardInPlayerHand(suitPos, rankPos)" 
     				[innerHtml]='deck.getCardFace(suitPos, rankPos) | safe'
 				   	[ngClass]="{ cardIsntInDeck : deck.getCardStatus(suitPos, rankPos) != 'in-the-deck',
-				   		cardIsInPlayerHand : deck.getCardStatus(suitPos, rankPos) == 'in-player-hand' }"
+				   		cardIsInPlayerHand : deck.getCardStatus(suitPos, rankPos) == 'in-player-hand',
+				   		twoColourDeck : !fourColourDeck }"
 				 		>
 
 				</a>

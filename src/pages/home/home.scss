@@ -11,21 +11,76 @@ page-home {
 		flex: 1;
 	}
 
+
+
+
+
+
+
+	/*   --- CARD STUFF ---
+	===========================*/
+
+	.twoColourDeck{
+		
+		.club-colour{
+			fill: #000;
+		}
+
+		.diamond-colour{
+			fill: yellow;
+		}
+	}
+
+
 	.cardIsntInDeck{
 		color: red !important;
+
+
+		#Background{
+			fill: #aaa;
+		}
+
+		.club-colour{
+			fill: #444;
+		}
 	}
 
 	.cardIsInPlayerHand{
 		color: green !important;
+
+		#Background{
+			stroke: yellow;
+		}
 	}
 
-	.card-face-big-wrapper{
+
+
+
+
+
+	/*  --- ODDS TEXT ---
+	========================*/
+
+	.suit-odds{
+
+		/* Safari */
+		-webkit-transform: rotate(90deg);
+
+		/* Firefox */
+		-moz-transform: rotate(90deg);
+
+		/* IE */
+		-ms-transform: rotate(90deg);
+
+		/* Opera */
+		-o-transform: rotate(90deg);
+
+		/* Internet Explorer */
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+
+
 	}
 
-	.card-face-big{
-		position: relative;
-		height: 80%;
-		width: auto;
-	}
+
 
 }
