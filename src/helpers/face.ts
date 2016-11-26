@@ -18,7 +18,7 @@ export class FaceHelper {
 		this.faceHtml.push([
 
 				//2
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 					<g id="Card">
 						<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -58,7 +58,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//3
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -104,7 +104,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//4
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -156,7 +156,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//5
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -214,7 +214,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//6
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -278,7 +278,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//7
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -348,7 +348,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//8
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M1.441,23.041
@@ -424,7 +424,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//9
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -506,7 +506,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//10
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -594,7 +594,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//J
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -625,7 +625,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//Q
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -656,7 +656,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//K
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -687,7 +687,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//A
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 					<g id="Card">
 						<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -727,7 +727,7 @@ export class FaceHelper {
 			this.faceHtml.push([
 
 				//2
-			 	[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 	[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					  viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -735,27 +735,27 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">2</text>
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">2</text>
-					<path id="Suit_4_" fill="#ED1C24" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">2</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">2</text>
+					<path id="Suit_4_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_1_" fill="#ED1C24" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
+					<path id="Suit_1_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.777,9.09-10.668c0-3.149-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.439,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
 				<g id="Face">
-					<path id="Pip_18_" fill="#ED1C24" d="M147.181,429.748c0,11.759,8.121,21.291,18.14,21.291c6.045,0,11.384-3.482,14.68-8.816
+					<path id="Pip_18_" fill="#EC1D24" class="heart-colour" d="M147.181,429.748c0,11.759,8.121,21.291,18.14,21.291c6.045,0,11.384-3.482,14.68-8.816
 						c3.297,5.334,8.638,8.816,14.681,8.816c10.02,0,18.142-9.532,18.142-21.291c0-6.286-2.333-11.917-6.024-15.814h0.03l-26.826-28.824
 						l-26.826,28.824h0.029C149.514,417.831,147.181,423.462,147.181,429.748z"/>
-					<path id="Pip_7_" fill="#ED1C24" d="M212.82,74.251c0-11.758-8.122-21.291-18.143-21.291c-6.044,0-11.383,3.483-14.68,8.817
+					<path id="Pip_7_" fill="#EC1D24" class="heart-colour" d="M212.82,74.251c0-11.758-8.122-21.291-18.143-21.291c-6.044,0-11.383,3.483-14.68,8.817
 						c-3.296-5.334-8.636-8.817-14.68-8.817c-10.019,0-18.142,9.533-18.142,21.291c0,6.286,2.334,11.917,6.024,15.814h-0.03
 						l26.827,28.826l26.826-28.826h-0.029C210.484,86.168,212.82,80.538,212.82,74.251z"/>
 				</g>
 				</svg>`],
 				
 				//3
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -763,12 +763,12 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">3</text>
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">3</text>
-					<path id="Suit_7_" fill="#EB2027" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">3</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">3</text>
+					<path id="Suit_7_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_6_" fill="#EB2027" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
+					<path id="Suit_6_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.776,9.09-10.668c0-3.148-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.438,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
@@ -786,7 +786,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//4
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -794,33 +794,33 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_2_" transform="matrix(1 0 0 1 21.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">4</text>
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 338.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">4</text>
-					<path id="Suit_4_" fill="#ED1C24" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_2_" transform="matrix(1 0 0 1 21.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">4</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 338.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">4</text>
+					<path id="Suit_4_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_1_" fill="#ED1C24" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
+					<path id="Suit_1_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.777,9.09-10.668c0-3.149-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.439,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
 				<g id="Face">
-					<path id="Pip_19_" fill="#ED1C24" d="M211.348,429.748c0,11.759,8.121,21.291,18.142,21.291c6.045,0,11.384-3.482,14.679-8.816
+					<path id="Pip_19_" fill="#EC1D24" class="heart-colour" d="M211.348,429.748c0,11.759,8.121,21.291,18.142,21.291c6.045,0,11.384-3.482,14.679-8.816
 						c3.297,5.334,8.637,8.816,14.682,8.816c10.02,0,18.142-9.532,18.142-21.291c0-6.286-2.333-11.917-6.024-15.814h0.03l-26.826-28.824
 						l-26.827,28.824h0.03C213.682,417.831,211.348,423.462,211.348,429.748z"/>
-					<path id="Pip_18_" fill="#ED1C24" d="M83.014,429.748c0,11.759,8.121,21.291,18.14,21.291c6.045,0,11.384-3.482,14.68-8.816
+					<path id="Pip_18_" fill="#EC1D24" class="heart-colour" d="M83.014,429.748c0,11.759,8.121,21.291,18.14,21.291c6.045,0,11.384-3.482,14.68-8.816
 						c3.297,5.334,8.637,8.816,14.68,8.816c10.02,0,18.142-9.532,18.142-21.291c0-6.286-2.333-11.917-6.024-15.814h0.03l-26.826-28.824
 						L89.01,413.934h0.029C85.347,417.831,83.014,423.462,83.014,429.748z"/>
-					<path id="Pip_7_" fill="#ED1C24" d="M148.653,74.251c0-11.758-8.122-21.291-18.142-21.291c-6.044,0-11.383,3.483-14.68,8.817
+					<path id="Pip_7_" fill="#EC1D24" class="heart-colour" d="M148.653,74.251c0-11.758-8.122-21.291-18.142-21.291c-6.044,0-11.383,3.483-14.68,8.817
 						c-3.296-5.334-8.636-8.817-14.68-8.817c-10.019,0-18.142,9.533-18.142,21.291c0,6.286,2.334,11.917,6.024,15.814h-0.03
 						l26.827,28.826l26.826-28.826h-0.029C146.318,86.168,148.653,80.538,148.653,74.251z"/>
-					<path id="Pip_11_" fill="#ED1C24" d="M276.988,74.251c0-11.758-8.121-21.291-18.141-21.291c-6.045,0-11.385,3.483-14.681,8.817
+					<path id="Pip_11_" fill="#EC1D24" class="heart-colour" d="M276.988,74.251c0-11.758-8.121-21.291-18.141-21.291c-6.045,0-11.385,3.483-14.681,8.817
 						c-3.296-5.334-8.637-8.817-14.681-8.817c-10.02,0-18.141,9.533-18.141,21.291c0,6.286,2.332,11.917,6.023,15.814h-0.03
 						l26.826,28.826l26.827-28.826h-0.03C274.654,86.168,276.988,80.538,276.988,74.251z"/>
 				</g>
 				</svg>`],
 
 				//5
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -828,12 +828,12 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 337.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">5</text>
-					<text id="Rank_2_" transform="matrix(1 0 0 1 22.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">5</text>
-					<path id="Suit_7_" fill="#EB2027" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 337.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">5</text>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 22.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">5</text>
+					<path id="Suit_7_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_6_" fill="#EB2027" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
+					<path id="Suit_6_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.776,9.09-10.668c0-3.148-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.438,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
@@ -857,7 +857,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//6
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -865,12 +865,12 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">6</text>
-					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">6</text>
-					<path id="Suit_7_" fill="#EB2027" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">6</text>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">6</text>
+					<path id="Suit_7_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_6_" fill="#EB2027" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
+					<path id="Suit_6_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.776,9.09-10.668c0-3.148-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.438,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
@@ -897,7 +897,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//7
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -905,12 +905,12 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 333.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">7</text>
-					<text id="Rank_2_" transform="matrix(1 0 0 1 26.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">7</text>
-					<path id="Suit_7_" fill="#EB2027" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 333.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">7</text>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 26.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">7</text>
+					<path id="Suit_7_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_6_" fill="#EB2027" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
+					<path id="Suit_6_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.776,9.09-10.668c0-3.148-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.438,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
@@ -940,7 +940,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//8
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -948,12 +948,12 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">8</text>
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">8</text>
-					<path id="Suit_7_" fill="#EB2027" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">8</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">8</text>
+					<path id="Suit_7_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_6_" fill="#EB2027" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
+					<path id="Suit_6_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.776,9.09-10.668c0-3.148-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.438,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
@@ -986,7 +986,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//9
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -994,48 +994,48 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">9</text>
-					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">9</text>
-					<path id="Suit_4_" fill="#ED1C24" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">9</text>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">9</text>
+					<path id="Suit_4_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_1_" fill="#ED1C24" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
+					<path id="Suit_1_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.777,9.09-10.668c0-3.149-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.439,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
 				<g id="Face">
-					<path id="Pip_19_" fill="#ED1C24" d="M211.348,429.748c0,11.759,8.121,21.291,18.142,21.291c6.045,0,11.384-3.482,14.679-8.816
+					<path id="Pip_19_" fill="#EC1D24" class="heart-colour" d="M211.348,429.748c0,11.759,8.121,21.291,18.142,21.291c6.045,0,11.384-3.482,14.679-8.816
 						c3.297,5.334,8.637,8.816,14.682,8.816c10.02,0,18.142-9.532,18.142-21.291c0-6.286-2.333-11.917-6.024-15.814h0.03l-26.826-28.824
 						l-26.827,28.824h0.03C213.682,417.831,211.348,423.462,211.348,429.748z"/>
-					<path id="Pip_18_" fill="#ED1C24" d="M83.014,429.748c0,11.759,8.121,21.291,18.14,21.291c6.045,0,11.384-3.482,14.68-8.816
+					<path id="Pip_18_" fill="#EC1D24" class="heart-colour" d="M83.014,429.748c0,11.759,8.121,21.291,18.14,21.291c6.045,0,11.384-3.482,14.68-8.816
 						c3.297,5.334,8.637,8.816,14.68,8.816c10.02,0,18.142-9.532,18.142-21.291c0-6.286-2.333-11.917-6.024-15.814h0.03l-26.826-28.824
 						L89.01,413.934h0.029C85.347,417.831,83.014,423.462,83.014,429.748z"/>
-					<path id="Pip_17_" fill="#ED1C24" d="M211.348,319.032c0,11.759,8.121,21.291,18.142,21.291c6.045,0,11.384-3.482,14.679-8.816
+					<path id="Pip_17_" fill="#EC1D24" class="heart-colour" d="M211.348,319.032c0,11.759,8.121,21.291,18.142,21.291c6.045,0,11.384-3.482,14.679-8.816
 						c3.297,5.334,8.637,8.816,14.682,8.816c10.02,0,18.142-9.532,18.142-21.291c0-6.285-2.333-11.916-6.024-15.813h0.03l-26.826-28.826
 						l-26.827,28.826h0.03C213.682,307.116,211.348,312.747,211.348,319.032z"/>
-					<path id="Pip_16_" fill="#ED1C24" d="M83.014,319.032c0,11.759,8.121,21.291,18.14,21.291c6.045,0,11.384-3.482,14.68-8.816
+					<path id="Pip_16_" fill="#EC1D24" class="heart-colour" d="M83.014,319.032c0,11.759,8.121,21.291,18.14,21.291c6.045,0,11.384-3.482,14.68-8.816
 						c3.297,5.334,8.637,8.816,14.68,8.816c10.02,0,18.142-9.532,18.142-21.291c0-6.285-2.333-11.916-6.024-15.813h0.03l-26.826-28.826
 						L89.01,303.219h0.029C85.347,307.116,83.014,312.747,83.014,319.032z"/>
-					<path id="Pip_7_" fill="#ED1C24" d="M148.653,74.251c0-11.758-8.122-21.291-18.142-21.291c-6.044,0-11.383,3.483-14.68,8.817
+					<path id="Pip_7_" fill="#EC1D24" class="heart-colour" d="M148.653,74.251c0-11.758-8.122-21.291-18.142-21.291c-6.044,0-11.383,3.483-14.68,8.817
 						c-3.296-5.334-8.636-8.817-14.68-8.817c-10.019,0-18.142,9.533-18.142,21.291c0,6.286,2.334,11.917,6.024,15.814h-0.03
 						l26.827,28.826l26.826-28.826h-0.029C146.318,86.168,148.653,80.538,148.653,74.251z"/>
-					<path id="Pip_11_" fill="#ED1C24" d="M276.988,74.251c0-11.758-8.121-21.291-18.141-21.291c-6.045,0-11.385,3.483-14.681,8.817
+					<path id="Pip_11_" fill="#EC1D24" class="heart-colour" d="M276.988,74.251c0-11.758-8.121-21.291-18.141-21.291c-6.045,0-11.385,3.483-14.681,8.817
 						c-3.296-5.334-8.637-8.817-14.681-8.817c-10.02,0-18.141,9.533-18.141,21.291c0,6.286,2.332,11.917,6.023,15.814h-0.03
 						l26.826,28.826l26.827-28.826h-0.03C274.654,86.168,276.988,80.538,276.988,74.251z"/>
-					<path id="Pip_13_" fill="#ED1C24" d="M148.653,184.968c0-11.759-8.122-21.291-18.142-21.291c-6.044,0-11.383,3.482-14.68,8.816
+					<path id="Pip_13_" fill="#EC1D24" class="heart-colour" d="M148.653,184.968c0-11.759-8.122-21.291-18.142-21.291c-6.044,0-11.383,3.482-14.68,8.816
 						c-3.296-5.334-8.636-8.816-14.68-8.816c-10.019,0-18.142,9.532-18.142,21.291c0,6.285,2.334,11.916,6.024,15.813h-0.03
 						l26.827,28.826l26.826-28.826h-0.029C146.318,196.884,148.653,191.253,148.653,184.968z"/>
-					<path id="Pip_12_" fill="#ED1C24" d="M276.988,184.968c0-11.759-8.121-21.291-18.141-21.291c-6.045,0-11.385,3.482-14.681,8.816
+					<path id="Pip_12_" fill="#EC1D24" class="heart-colour" d="M276.988,184.968c0-11.759-8.121-21.291-18.141-21.291c-6.045,0-11.385,3.482-14.681,8.816
 						c-3.296-5.334-8.637-8.816-14.681-8.816c-10.02,0-18.141,9.532-18.141,21.291c0,6.285,2.332,11.916,6.023,15.813h-0.03
 						l26.826,28.826l26.827-28.826h-0.03C274.654,196.884,276.988,191.253,276.988,184.968z"/>
-					<path id="Pip_14_" fill="#ED1C24" d="M212.82,240.325c0-11.758-8.12-21.291-18.141-21.291c-6.044,0-11.383,3.483-14.679,8.817
+					<path id="Pip_14_" fill="#EC1D24" class="heart-colour" d="M212.82,240.325c0-11.758-8.12-21.291-18.141-21.291c-6.044,0-11.383,3.483-14.679,8.817
 						c-3.297-5.334-8.637-8.817-14.681-8.817c-10.02,0-18.142,9.533-18.142,21.291c0,6.286,2.334,11.917,6.024,15.813h-0.03
 						l26.827,28.825l26.826-28.825h-0.03C210.488,252.242,212.82,246.611,212.82,240.325z"/>
 				</g>
 				</svg>`],
 
 				//10
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M1.44,23.041
@@ -1043,51 +1043,51 @@ export class FaceHelper {
 						c-11.93,0-21.601-9.671-21.601-21.601V23.041z"/>
 				</g>
 				<g id="Corners">
-					<path id="Suit_1_" fill="#ED1C24" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<path id="Suit_1_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_2_" fill="#ED1C24" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
+					<path id="Suit_2_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.777,9.09-10.668c0-3.149-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.439,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
-					<text id="Rank_2_" transform="matrix(1 0 0 1 11.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">10</text>
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 348.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">10</text>
+					<text id="Rank_2_" transform="matrix(1 0 0 1 11.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">10</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 348.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">10</text>
 				</g>
 				<g id="Face_1_">
-					<path id="Pip_19_" fill="#ED1C24" d="M214.332,428.688c0,10.688,7.383,19.354,16.491,19.354c5.495,0,10.349-3.166,13.345-8.016
+					<path id="Pip_19_" fill="#EC1D24" class="heart-colour" d="M214.332,428.688c0,10.688,7.383,19.354,16.491,19.354c5.495,0,10.349-3.166,13.345-8.016
 						c2.997,4.85,7.852,8.016,13.346,8.016c9.108,0,16.492-8.666,16.492-19.354c0-5.716-2.121-10.835-5.477-14.378h0.027l-24.389-26.205
 						l-24.388,26.205h0.026C216.453,417.854,214.332,422.973,214.332,428.688z"/>
-					<path id="Pip_18_" fill="#ED1C24" d="M85.997,428.688c0,10.688,7.383,19.354,16.491,19.354c5.495,0,10.349-3.166,13.345-8.016
+					<path id="Pip_18_" fill="#EC1D24" class="heart-colour" d="M85.997,428.688c0,10.688,7.383,19.354,16.491,19.354c5.495,0,10.349-3.166,13.345-8.016
 						c2.997,4.85,7.852,8.016,13.346,8.016c9.108,0,16.492-8.666,16.492-19.354c0-5.716-2.121-10.835-5.477-14.378h0.027l-24.388-26.205
 						l-24.388,26.205h0.027C88.118,417.854,85.997,422.973,85.997,428.688z"/>
-					<path id="Pip_17_" fill="#ED1C24" d="M214.332,317.971c0,10.689,7.383,19.355,16.491,19.355c5.495,0,10.349-3.166,13.345-8.016
+					<path id="Pip_17_" fill="#EC1D24" class="heart-colour" d="M214.332,317.971c0,10.689,7.383,19.355,16.491,19.355c5.495,0,10.349-3.166,13.345-8.016
 						c2.997,4.85,7.852,8.016,13.346,8.016c9.108,0,16.492-8.666,16.492-19.355c0-5.714-2.121-10.832-5.477-14.375h0.027l-24.389-26.207
 						l-24.388,26.207h0.026C216.453,307.139,214.332,312.257,214.332,317.971z"/>
-					<path id="Pip_16_" fill="#ED1C24" d="M85.997,317.971c0,10.689,7.383,19.355,16.491,19.355c5.495,0,10.349-3.166,13.345-8.016
+					<path id="Pip_16_" fill="#EC1D24" class="heart-colour" d="M85.997,317.971c0,10.689,7.383,19.355,16.491,19.355c5.495,0,10.349-3.166,13.345-8.016
 						c2.997,4.85,7.852,8.016,13.346,8.016c9.108,0,16.492-8.666,16.492-19.355c0-5.714-2.121-10.832-5.477-14.375h0.027l-24.388-26.207
 						l-24.388,26.207h0.027C88.118,307.139,85.997,312.257,85.997,317.971z"/>
-					<path id="Pip_15_" fill="#ED1C24" d="M150.163,373.328c0,10.689,7.383,19.355,16.491,19.355c5.495,0,10.349-3.166,13.345-8.016
+					<path id="Pip_15_" fill="#EC1D24" class="heart-colour" d="M150.163,373.328c0,10.689,7.383,19.355,16.491,19.355c5.495,0,10.349-3.166,13.345-8.016
 						c2.997,4.85,7.853,8.016,13.347,8.016c9.107,0,16.491-8.666,16.491-19.355c0-5.714-2.121-10.833-5.478-14.376h0.027L180,332.746
 						l-24.388,26.206h0.027C152.284,362.495,150.163,367.614,150.163,373.328z"/>
-					<path id="Pip_7_" fill="#ED1C24" d="M145.669,75.313c0-10.689-7.384-19.355-16.492-19.355c-5.495,0-10.348,3.166-13.345,8.015
+					<path id="Pip_7_" fill="#EC1D24" class="heart-colour" d="M145.669,75.313c0-10.689-7.384-19.355-16.492-19.355c-5.495,0-10.348,3.166-13.345,8.015
 						c-2.997-4.849-7.851-8.015-13.346-8.015c-9.108,0-16.492,8.666-16.492,19.355c0,5.714,2.122,10.833,5.476,14.376h-0.027
 						l24.388,26.206l24.387-26.206h-0.026C143.547,86.146,145.669,81.027,145.669,75.313z"/>
-					<path id="Pip_11_" fill="#ED1C24" d="M274.004,75.313c0-10.689-7.383-19.355-16.49-19.355c-5.496,0-10.35,3.166-13.346,8.015
+					<path id="Pip_11_" fill="#EC1D24" class="heart-colour" d="M274.004,75.313c0-10.689-7.383-19.355-16.49-19.355c-5.496,0-10.35,3.166-13.346,8.015
 						c-2.997-4.849-7.852-8.015-13.346-8.015c-9.108,0-16.492,8.666-16.492,19.355c0,5.714,2.121,10.833,5.477,14.376h-0.027
 						l24.389,26.206l24.389-26.206h-0.027C271.883,86.146,274.004,81.027,274.004,75.313z"/>
-					<path id="Pip_13_" fill="#ED1C24" d="M145.669,186.029c0-10.689-7.384-19.355-16.492-19.355c-5.495,0-10.348,3.166-13.345,8.015
+					<path id="Pip_13_" fill="#EC1D24" class="heart-colour" d="M145.669,186.029c0-10.689-7.384-19.355-16.492-19.355c-5.495,0-10.348,3.166-13.345,8.015
 						c-2.997-4.849-7.851-8.015-13.346-8.015c-9.108,0-16.492,8.666-16.492,19.355c0,5.714,2.122,10.833,5.476,14.376h-0.027
 						l24.388,26.206l24.387-26.206h-0.026C143.547,196.862,145.669,191.743,145.669,186.029z"/>
-					<path id="Pip_12_" fill="#ED1C24" d="M274.004,186.029c0-10.689-7.383-19.355-16.49-19.355c-5.496,0-10.35,3.166-13.346,8.015
+					<path id="Pip_12_" fill="#EC1D24" class="heart-colour" d="M274.004,186.029c0-10.689-7.383-19.355-16.49-19.355c-5.496,0-10.35,3.166-13.346,8.015
 						c-2.997-4.849-7.852-8.015-13.346-8.015c-9.108,0-16.492,8.666-16.492,19.355c0,5.714,2.121,10.833,5.477,14.376h-0.027
 						l24.389,26.206l24.389-26.206h-0.027C271.883,196.862,274.004,191.743,274.004,186.029z"/>
-					<path id="Pip_14_" fill="#ED1C24" d="M209.838,130.671c0-10.689-7.383-19.355-16.49-19.355c-5.496,0-10.35,3.166-13.346,8.015
+					<path id="Pip_14_" fill="#EC1D24" class="heart-colour" d="M209.838,130.671c0-10.689-7.383-19.355-16.49-19.355c-5.496,0-10.35,3.166-13.346,8.015
 						c-2.997-4.849-7.852-8.015-13.346-8.015c-9.108,0-16.492,8.666-16.492,19.355c0,5.714,2.121,10.833,5.477,14.376h-0.027
 						l24.388,26.206l24.389-26.206h-0.027C207.717,141.505,209.838,136.386,209.838,130.671z"/>
 				</g>
 				</svg>`],
 
 				//J
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1095,24 +1095,24 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_2_" transform="matrix(1 0 0 1 26.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">J</text>
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 333.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">J</text>
-					<path id="Suit_7_" fill="#EB2027" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_2_" transform="matrix(1 0 0 1 26.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">J</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 333.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">J</text>
+					<path id="Suit_7_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_6_" fill="#EB2027" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
+					<path id="Suit_6_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.776,9.09-10.668c0-3.148-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.438,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
 				<g id="Face">
 					<g>
-						<text transform="matrix(1 0 0 1 148.7632 326.7578)" fill="#ED1C24" font-family="'FjallaOne'" font-size="180">J</text>
+						<text transform="matrix(1 0 0 1 148.7632 326.7578)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="180">J</text>
 					</g>
 				</g>
 				</svg>`],
 
 				//Q
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1120,24 +1120,24 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">Q</text>
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">Q</text>
-					<path id="Suit_7_" fill="#EB2027" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_2_" transform="matrix(1 0 0 1 23.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">Q</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 336.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">Q</text>
+					<path id="Suit_7_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_6_" fill="#EB2027" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
+					<path id="Suit_6_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.892,4.067,10.668,9.088,10.668c3.029,0,5.705-1.744,7.354-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.776,9.09-10.668c0-3.148-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.438,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
 				<g id="Face">
 					<g>
-						<text transform="matrix(1 0 0 1 136.7632 326.7578)" fill="#ED1C24" font-family="'FjallaOne'" font-size="180">Q</text>
+						<text transform="matrix(1 0 0 1 136.7632 326.7578)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="180">Q</text>
 					</g>
 				</g>
 				</svg>`],
 
 				//K
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1145,24 +1145,24 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_2_" transform="matrix(1 0 0 1 22.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">K</text>
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 337.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">K</text>
-					<path id="Suit_4_" fill="#ED1C24" d="M52.515,110.307c0-5.356-3.699-9.699-8.263-9.699c-2.754,0-5.186,1.586-6.687,4.017
+					<text id="Rank_2_" transform="matrix(1 0 0 1 22.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">K</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 337.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">K</text>
+					<path id="Suit_4_" fill="#EC1D24" class="heart-colour" d="M52.515,110.307c0-5.356-3.699-9.699-8.263-9.699c-2.754,0-5.186,1.586-6.687,4.017
 						c-1.502-2.43-3.935-4.017-6.687-4.017c-4.564,0-8.265,4.343-8.265,9.699c0,2.863,1.062,5.429,2.745,7.204h-0.014l12.221,13.131
 						l12.219-13.131h-0.013C51.453,115.735,52.515,113.169,52.515,110.307z"/>
-					<path id="Suit_1_" fill="#ED1C24" d="M307.486,393.693c0,5.354,3.697,9.699,8.262,9.699c2.754,0,5.187-1.588,6.688-4.02
+					<path id="Suit_1_" fill="#EC1D24" class="heart-colour" d="M307.486,393.693c0,5.354,3.697,9.699,8.262,9.699c2.754,0,5.187-1.588,6.688-4.02
 						c1.502,2.432,3.937,4.02,6.688,4.02c4.563,0,8.264-4.346,8.264-9.699c0-2.863-1.062-5.43-2.744-7.205h0.016l-12.222-13.131
 						l-12.22,13.131h0.015C308.548,388.266,307.486,390.83,307.486,393.693z"/>
 				</g>
 				<g id="Face">
 					<g>
-						<text transform="matrix(1 0 0 1 136.7632 326.7578)" fill="#ED1C24" font-family="'FjallaOne'" font-size="180">K</text>
+						<text transform="matrix(1 0 0 1 136.7632 326.7578)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="180">K</text>
 					</g>
 				</g>
 				</svg>`],
 
 				//A
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1170,17 +1170,17 @@ export class FaceHelper {
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>
 				<g id="Corners">
-					<text id="Rank_2_" transform="matrix(1 0 0 1 24.1826 76.3516)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">A</text>
-					<text id="Rank_3_" transform="matrix(-1 0 0 -1 335.8174 427.6484)" fill="#ED1C24" font-family="'FjallaOne'" font-size="57.6">A</text>
-					<path id="Suit_4_" fill="#ED1C24" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
+					<text id="Rank_2_" transform="matrix(1 0 0 1 24.1826 76.3516)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">A</text>
+					<text id="Rank_3_" transform="matrix(-1 0 0 -1 335.8174 427.6484)" fill="#EC1D24" class="heart-colour" font-family="'FjallaOne'" font-size="57.6">A</text>
+					<path id="Suit_4_" fill="#EC1D24" class="heart-colour" d="M54.011,109.774c0-5.892-4.069-10.668-9.089-10.668c-3.029,0-5.705,1.744-7.356,4.418
 						c-1.652-2.674-4.328-4.418-7.355-4.418c-5.021,0-9.091,4.776-9.091,10.668c0,3.149,1.168,5.972,3.019,7.925h-0.016l13.443,14.444
 						l13.441-14.444h-0.015C52.842,115.746,54.011,112.924,54.011,109.774z"/>
-					<path id="Suit_1_" fill="#ED1C24" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
+					<path id="Suit_1_" fill="#EC1D24" class="heart-colour" d="M305.991,394.227c0,5.891,4.068,10.668,9.088,10.668c3.029,0,5.705-1.744,7.355-4.418
 						c1.652,2.674,4.328,4.418,7.356,4.418c5.021,0,9.09-4.777,9.09-10.668c0-3.149-1.168-5.973-3.019-7.926h0.015l-13.442-14.443
 						l-13.439,14.443h0.014C307.159,388.254,305.991,391.076,305.991,394.227z"/>
 				</g>
 				<g id="Face">
-					<path id="Pip" fill="#ED1C24" d="M245.666,228.641c0-23.524-16.249-42.595-36.291-42.595c-12.096,0-22.779,6.964-29.373,17.64
+					<path id="Pip" fill="#EC1D24" class="heart-colour" d="M245.666,228.641c0-23.524-16.249-42.595-36.291-42.595c-12.096,0-22.779,6.964-29.373,17.64
 						c-6.597-10.676-17.281-17.64-29.369-17.64c-20.046,0-36.298,19.071-36.298,42.595c0,12.575,4.664,23.844,12.053,31.643h-0.063
 						l53.677,57.673l53.669-57.673h-0.06C240.998,252.484,245.666,241.216,245.666,228.641z"/>
 				</g>
@@ -1191,7 +1191,7 @@ export class FaceHelper {
 			this.faceHtml.push([
 
 			 	//2
-			 	[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 	[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1225,7 +1225,7 @@ export class FaceHelper {
 				</svg>`],
 
 			 	//3
-			 	[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 	[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1264,7 +1264,7 @@ export class FaceHelper {
 				`],
 
 			 	//4
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1307,7 +1307,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//5
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1354,7 +1354,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//6
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1408,7 +1408,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//7
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1465,7 +1465,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//8
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M1.441,23.041
@@ -1527,7 +1527,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//9
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1593,7 +1593,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//10
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1659,7 +1659,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//J
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 				viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1687,7 +1687,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//Q
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1715,7 +1715,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//K
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1743,7 +1743,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//A
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1779,7 +1779,7 @@ export class FaceHelper {
 			this.faceHtml.push([
 
 				//2
-			 	[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 	[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1799,7 +1799,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//3
-			 	[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 	[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1820,7 +1820,7 @@ export class FaceHelper {
 				</svg>`],
 				
 				//4
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1842,7 +1842,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//5
-				[`<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1865,7 +1865,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//6
-				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1889,7 +1889,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//7
-				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1915,7 +1915,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//8
-				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1941,7 +1941,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//9
-				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1968,7 +1968,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//10
-				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -1996,7 +1996,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//J
-				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -2017,7 +2017,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//Q
-				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -2038,7 +2038,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//K
-				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
@@ -2059,7 +2059,7 @@ export class FaceHelper {
 				</svg>`],
 
 				//A
-				[`<svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				[`<svg version="1.1" class="stud-card"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
 					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959

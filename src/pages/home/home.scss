@@ -1,3 +1,6 @@
+$card-transition-time: 0.25s;
+
+
 page-home {
 
 	.card-grid{
@@ -20,34 +23,40 @@ page-home {
 	/*   --- CARD STUFF ---
 	===========================*/
 
+	//Apply transition to every element in the card
+	.stud-card * {
+		transition: $card-transition-time;
+	}
+
+	//Change hearts/spades to red/black if 2 colour deck is chosen
 	.twoColourDeck{
 		
 		.club-colour{
-			fill: #000;
+			fill: #231F20;
 		}
 
-		.diamond-blue{
-			fill: red;
+		.diamond-colour{
+			fill: #EC1D24;
 		}
 	}
 
 
+	//Change card colours to muted if card is no longer in deck
 	.cardIsntInDeck{
-
-		transition: 0.5s;
 
 		.card-background{
 			fill: #BD95CC;
 		}
 
-		.club-colour{
+		.club-colour, .heart-colour, .spade-colour, .diamond-colour{
 			fill: #9455AB;
 		}
 	}
 
+
+	//Highlight card with drop shadow if in hand
 	.cardIsInPlayerHand{
 
-		transition: 0.5s;
 
 		.card-background{
 			stroke: #EDD62B;
