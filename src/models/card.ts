@@ -13,7 +13,10 @@ export class CardModel {
 		this.rankPos = rankPos;
 		this.face = face;
 
+	}
 
+	public getFace(){
+		return this.face;
 	}
 
 }

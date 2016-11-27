@@ -7,6 +7,7 @@ import { SettingsPage } from '../pages/settings/settings';
 import { StatsPage } from '../pages/stats/stats';
 import { SettingsData } from '../providers/settings-data';
 import { DeckModel } from '../models/deck';
+import { PlayerHandModel } from '../models/player-hand';
 import { SafePipe } from '../pipes/safe';
 
 @NgModule({
@@ -27,6 +28,6 @@ import { SafePipe } from '../pipes/safe';
     SettingsPage,
     StatsPage
   ],
-  providers: [DeckModel, SettingsData, {provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [DeckModel, PlayerHandModel, SettingsData, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}

@@ -1,4 +1,5 @@
 import { CardModel } from '../models/card';
+import { PlayerHandModel } from '../models/player-hand';
 import { FaceHelper } from '../helpers/face';
 
 export class DeckModel {
@@ -6,6 +7,8 @@ export class DeckModel {
 
 
 	private cards: any[][] = new Array(0);
+
+	private playerHand: PlayerHandModel = new PlayerHandModel;
 
 	private suitOdds: number[] = [];
 	private rankOdds: number[] = [];
@@ -15,6 +18,7 @@ export class DeckModel {
 	private totalCardsInDeck: number = 0;
 
 	private faceHelper: FaceHelper;
+
 
 
 	constructor(){
@@ -32,6 +36,9 @@ export class DeckModel {
 				this.cards[suit].push(new CardModel(suit, rank, face));
 			}
 		}
+
+		this.playerHand.addCardToHand(this.cards[0][1]);
+   		this.playerHand.getHandFaces();
 
 
 		this.resetDeck();

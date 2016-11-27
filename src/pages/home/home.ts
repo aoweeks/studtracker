@@ -10,6 +10,9 @@ import { SettingsData } from '../../providers/settings-data';
 
 import { DeckModel } from '../../models/deck';
 
+import { PlayerHandModel } from '../../models/player-hand';
+
+
 
 @Component({
   selector: 'page-home',
@@ -17,14 +20,14 @@ import { DeckModel } from '../../models/deck';
 })
 export class HomePage {
 
-  suits: string[] = ["s", "h", "c", "d"];
-  ranks: string[] = ["2", "3", "4", "5", "6", "7", "8", "9", "10",
+  private suits: string[] = ["s", "h", "c", "d"];
+  private ranks: string[] = ["2", "3", "4", "5", "6", "7", "8", "9", "10",
   					  "J", "Q", "K", "A"];
 
-  public fourColourDeck: boolean = false;
 
-  constructor(public navCtrl: NavController, public deck: DeckModel, public settingsData: SettingsData) {
-    
+  constructor(public navCtrl: NavController, private deck: DeckModel, private playerHand: PlayerHandModel,
+  		public settingsData: SettingsData) {
+  	
   }
 
   openSettingsPage(): void {
@@ -36,8 +39,8 @@ export class HomePage {
   }
 
   //DEV PURPOSES ONLY
-  consolelog(){
-  	console.log();
+  consolelog(data){
+  	console.log(data);
   }
 
 
