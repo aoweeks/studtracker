@@ -1,5 +1,6 @@
 import { CardModel } from '../models/card';
 import { PlayerHandModel } from '../models/player-hand';
+import { SettingsData } from '../providers/settings-data';
 import { FaceHelper } from '../helpers/face';
 import { Injectable } from '@angular/core';
 
@@ -23,7 +24,7 @@ export class DeckModel {
 
 
 
-	constructor(private playerHand: PlayerHandModel){
+	constructor(private playerHand: PlayerHandModel, private settingsData: SettingsData){
 		
 		this.faceHelper = new FaceHelper;
 
@@ -76,10 +77,14 @@ export class DeckModel {
 			this.playerHand.removeCardFromHand(currentCard);
 			
 		} else{
+			
+			let numOfCardMode = this.settingsData.getFiveOrSevenMode();
+			let handSize = this.playerHand.getHandSize();
 
-			currentCard.status = "in-player-hand";
-			this.playerHand.addCardToHand(currentCard);
-
+			if(handSize < numOfCardMode) {
+				currentCard.status = "in-player-hand";
+				this.playerHand.addCardToHand(currentCard);
+			}
 		}
 		console.log(this.playerHand);
 		this.updateOdds();

@@ -10,6 +10,7 @@ import { Injectable } from '@angular/core';
 export class SettingsData {
 
   private fourColourDeck: boolean = true;
+  private sevenCardMode: boolean = true;
 
   constructor() {
 
@@ -21,6 +22,18 @@ export class SettingsData {
 
   setDeckColours(isFourColours: boolean): void {
   	this.fourColourDeck = isFourColours;
+  }
+
+  getFiveOrSevenMode(): number {
+    if(this.sevenCardMode = true){
+      return 7;
+    } else{
+      return 5;
+    }
+  }
+
+  setFiveOrSevenMode(isSevenMode: boolean): void {
+    this.sevenCardMode = isSevenMode;
   }
 
 }
