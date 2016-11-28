@@ -1,13 +1,20 @@
 hand-navbar {
-	
+
 	//NAVBAR CARD STUFF
 	.navbar-hand{
 		display: inline-block;
 
 		.stud-card{
-			height: 30px;
+			height: 20px;
 			width: auto;
+			padding-left: 3px;
 		}
+
+	}
+
+	ion-title{
+		//line-height: 20px;
+		//font-size: 20px !important;
 	}
 
 }
