@@ -9,6 +9,7 @@ import { SettingsData } from '../providers/settings-data';
 import { DeckModel } from '../models/deck';
 import { PlayerHandModel } from '../models/player-hand';
 import { SafePipe } from '../pipes/safe';
+import { HandNavbarComponent } from '../components/hand-navbar/hand-navbar';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SafePipe } from '../pipes/safe';
     HomePage,
     SettingsPage,
     StatsPage,
-    SafePipe
+    SafePipe,
+    HandNavbarComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)

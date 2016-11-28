@@ -13,7 +13,6 @@ import { DeckModel } from '../../models/deck';
 import { PlayerHandModel } from '../../models/player-hand';
 
 
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -38,9 +37,6 @@ export class HomePage {
   	this.navCtrl.push(StatsPage);
   }
 
-  getPlayerHandFaces(): string[] {
-  	return this.playerHand.getHandFaces();
-  }
 
   //DEV PURPOSES ONLY
   consolelog(data){
