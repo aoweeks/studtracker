@@ -1,14 +1,16 @@
 import { CardModel } from '../models/card';
 import { PlayerHandModel } from '../models/player-hand';
 import { FaceHelper } from '../helpers/face';
+import { Injectable } from '@angular/core';
 
+
+@Injectable()
 export class DeckModel {
 
 
 
 	private cards: any[][] = new Array(0);
 
-	private playerHand: PlayerHandModel = new PlayerHandModel;
 
 	private suitOdds: number[] = [];
 	private rankOdds: number[] = [];
@@ -21,7 +23,7 @@ export class DeckModel {
 
 
 
-	constructor(){
+	constructor(private playerHand: PlayerHandModel){
 		
 		this.faceHelper = new FaceHelper;
 
@@ -37,25 +39,27 @@ export class DeckModel {
 			}
 		}
 
-		this.playerHand.addCardToHand(this.cards[0][1]);
-   		this.playerHand.getHandFaces();
-
 
 		this.resetDeck();
 
 	}
 
 
-
 	toggleCardInDeck(suitPos: number, rankPos: number) : void {
 
-		if(this.cards[suitPos][rankPos].status == "in-the-deck"){
 
-			this.cards[suitPos][rankPos].status = "in-other-hand";
+		let currentCard = this.cards[suitPos][rankPos];
+
+		if(currentCard.status == "in-the-deck"){
+
+			currentCard.status = "in-other-hand";
 
 		} else{
 
-			this.cards[suitPos][rankPos].status = "in-the-deck";
+			if(currentCard.status == "in-player-hand"){
+				this.playerHand.removeCardFromHand(currentCard);
+			}
+			currentCard.status = "in-the-deck";
 
 		}
 
@@ -64,17 +68,20 @@ export class DeckModel {
 
 	toggleCardInPlayerHand(suitPos: number, rankPos: number) : void {
 
+		let currentCard = this.cards[suitPos][rankPos];
 
-		if(this.cards[suitPos][rankPos].status == "in-player-hand"){
+		if(currentCard.status == "in-player-hand"){
 
-			this.cards[suitPos][rankPos].status = "in-the-deck";
+			currentCard.status = "in-the-deck";
+			this.playerHand.removeCardFromHand(currentCard);
 			
 		} else{
 
-			this.cards[suitPos][rankPos].status = "in-player-hand";
+			currentCard.status = "in-player-hand";
+			this.playerHand.addCardToHand(currentCard);
 
 		}
-
+		console.log(this.playerHand);
 		this.updateOdds();
 	}
 
@@ -88,6 +95,7 @@ export class DeckModel {
 			}
 		}
 
+		this.playerHand.emptyHand();
 		this.updateOdds();
 	}
 

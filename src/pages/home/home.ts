@@ -27,7 +27,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private deck: DeckModel, private playerHand: PlayerHandModel,
   		public settingsData: SettingsData) {
-  	
+
   }
 
   openSettingsPage(): void {
@@ -36,6 +36,10 @@ export class HomePage {
 
   openStatsPage(): void {
   	this.navCtrl.push(StatsPage);
+  }
+
+  getPlayerHandFaces(): string[] {
+  	return this.playerHand.getHandFaces();
   }
 
   //DEV PURPOSES ONLY

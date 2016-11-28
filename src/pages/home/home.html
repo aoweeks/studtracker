@@ -2,6 +2,10 @@
   <ion-navbar color="this-background">
     <ion-title>
       YOUR HAND:
+
+	    <div class="navbar-hand" *ngFor="let playerCard of getPlayerHandFaces()" [innerHtml]="playerCard | safe">
+	    </div>
+    
     </ion-title>
 
     <ion-buttons end>
