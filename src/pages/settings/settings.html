@@ -32,6 +32,43 @@
 			</ion-item>
 
 		</ion-list>
+
+		<ion-list radio-group >
+			
+			<ion-list-header>
+				Five or Seven Card Stud
+			</ion-list-header>
+
+			<ion-item>
+				<ion-label>Five Card</ion-label>
+				<ion-radio [checked]="settingsData.getFiveOrSevenMode() == 5" (click)="settingsData.setFiveOrSevenMode(false)"></ion-radio>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Seven Card</ion-label>
+				<ion-radio [checked]="settingsData.getFiveOrSevenMode() == 7" (click)="settingsData.setFiveOrSevenMode(true)"></ion-radio>
+			</ion-item>
+
+		</ion-list>
+
+		<ion-list radio-group >
+			
+			<ion-list-header>
+				Haptic Feedback
+			</ion-list-header>
+
+			<ion-item>
+				<ion-label>On</ion-label>
+				<ion-radio [checked]="settingsData.getHapticOn()" (click)="settingsData.setHapticOn(true)"></ion-radio>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Off</ion-label>
+				<ion-radio [checked]="!settingsData.getHapticOn()" (click)="settingsData.setHapticOn(false)"></ion-radio>
+			</ion-item>
+
+		</ion-list>
+
 	</ion-list>
 
 </ion-content>

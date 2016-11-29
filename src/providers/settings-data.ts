@@ -11,6 +11,7 @@ export class SettingsData {
 
   private fourColourDeck: boolean = true;
   private sevenCardMode: boolean = true;
+  private hapticOn: boolean = true;
 
   constructor() {
 
@@ -34,6 +35,15 @@ export class SettingsData {
 
   setFiveOrSevenMode(isSevenMode: boolean): void {
     this.sevenCardMode = isSevenMode;
+  }
+
+
+  getHapticOn(): boolean {
+    return this.hapticOn;
+  }
+
+  setHapticOn(isHapticOn: boolean): void {
+    this.hapticOn = isHapticOn;
   }
 
 }

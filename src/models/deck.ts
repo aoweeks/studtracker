@@ -55,6 +55,7 @@ export class DeckModel {
 		if(currentCard.status == "in-the-deck"){
 
 			currentCard.status = "in-other-hand";
+			Vibration.vibrate(100);
 
 		} else{
 
@@ -84,7 +85,7 @@ export class DeckModel {
 
 			if(handSize < numOfCardMode) {
 				currentCard.status = "in-player-hand";
-				Vibration.vibrate(300);
+				Vibration.vibrate(200);
 				this.playerHand.addCardToHand(currentCard);
 			}
 		}
