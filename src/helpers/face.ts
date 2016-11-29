@@ -1594,7 +1594,7 @@ export class FaceHelper {
 				`<svg version="1.1" class="stud-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
 				<g id="Card">
-					<path id="Background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+					<path class="card-background" fill="#FFFFFF" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
 						c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
 						c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
 				</g>

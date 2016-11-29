@@ -19,12 +19,12 @@ import { PlayerHandModel } from '../../models/player-hand';
 })
 export class HomePage {
 
-  private suits: string[] = ["s", "h", "c", "d"];
-  private ranks: string[] = ["2", "3", "4", "5", "6", "7", "8", "9", "10",
+  public suits: string[] = ["s", "h", "c", "d"];
+  public ranks: string[] = ["2", "3", "4", "5", "6", "7", "8", "9", "10",
   					  "J", "Q", "K", "A"];
 
 
-  constructor(public navCtrl: NavController, private deck: DeckModel, private playerHand: PlayerHandModel,
+  constructor(public navCtrl: NavController, public deck: DeckModel, private playerHand: PlayerHandModel,
   		public settingsData: SettingsData) {
 
   }
