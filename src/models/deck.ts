@@ -3,6 +3,7 @@ import { PlayerHandModel } from '../models/player-hand';
 import { SettingsData } from '../providers/settings-data';
 import { FaceHelper } from '../helpers/face';
 import { Injectable } from '@angular/core';
+import { Vibration } from 'ionic-native';
 
 
 @Injectable()
@@ -83,6 +84,7 @@ export class DeckModel {
 
 			if(handSize < numOfCardMode) {
 				currentCard.status = "in-player-hand";
+				Vibration.vibrate(300);
 				this.playerHand.addCardToHand(currentCard);
 			}
 		}
