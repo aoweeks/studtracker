@@ -10,7 +10,7 @@ import { Injectable } from '@angular/core';
 export class SettingsData {
 
   private fourColourDeck: boolean = true;
-  private sevenCardMode: boolean = true;
+  private sevenCardModeOn: boolean = true;
   private hapticOn: boolean = true;
 
   constructor() {
@@ -26,15 +26,15 @@ export class SettingsData {
   }
 
   getFiveOrSevenMode(): number {
-    if(this.sevenCardMode = true){
-      return 7;
-    } else{
-      return 5;
-    }
+
+    console.log("GET: " + this.sevenCardModeOn);
+    return this.sevenCardModeOn ?  7 : 5;
+
   }
 
   setFiveOrSevenMode(isSevenMode: boolean): void {
-    this.sevenCardMode = isSevenMode;
+    this.sevenCardModeOn = isSevenMode;
+    console.log("SET: " + isSevenMode);
   }
 
 
