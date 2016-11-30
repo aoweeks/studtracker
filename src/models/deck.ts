@@ -23,6 +23,10 @@ export class DeckModel {
 
 	private faceHelper: FaceHelper;
 
+	private otherHandSound: any = new Audio('assets/sound/other-hand-sound.ogg');
+	private playerHandSound: any = new Audio('assets/sound/player-hand-sound.ogg');
+
+
 
 
 	constructor(private playerHand: PlayerHandModel, private settingsData: SettingsData){
@@ -55,6 +59,7 @@ export class DeckModel {
 		if(currentCard.status == "in-the-deck"){
 
 			currentCard.status = "in-other-hand";
+			this.playSound("other-hand");
 			Vibration.vibrate(100);
 
 		} else{
@@ -85,6 +90,7 @@ export class DeckModel {
 
 			if(handSize < numOfCardMode) {
 				currentCard.status = "in-player-hand";
+				this.playerHandSound.play();
 				Vibration.vibrate(200);
 				this.playerHand.addCardToHand(currentCard);
 			}
@@ -170,4 +176,19 @@ export class DeckModel {
 		return this.cards[suitPos][rankPos].face;
 	}
 
+
+
+	playSound(soundToPlay: string): void {
+
+		if(this.settingsData.getSoundOn()){
+
+
+			if(soundToPlay == "other-hand"){
+				this.otherHandSound.play();
+				console.log("should be playing");
+			}
+
+		}
+
+	}
 }

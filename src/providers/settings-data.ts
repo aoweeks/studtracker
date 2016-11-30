@@ -12,6 +12,7 @@ export class SettingsData {
   private fourColourDeck: boolean = true;
   private sevenCardModeOn: boolean = true;
   private hapticOn: boolean = true;
+  private soundOn: boolean = true;
 
   constructor() {
 
@@ -44,6 +45,14 @@ export class SettingsData {
 
   setHapticOn(isHapticOn: boolean): void {
     this.hapticOn = isHapticOn;
+  }
+
+  getSoundOn(): boolean {
+    return this.soundOn;
+  }
+
+  setSoundOn(isSoundOn: boolean): void {
+
   }
 
 }
