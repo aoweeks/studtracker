@@ -69,6 +69,24 @@
 
 		</ion-list>
 
+		<ion-list radio-group >
+			
+			<ion-list-header>
+				Sound
+			</ion-list-header>
+
+			<ion-item>
+				<ion-label>On</ion-label>
+				<ion-radio [checked]="settingsData.getSoundOn()" (click)="settingsData.setSoundOn(true)"></ion-radio>
+			</ion-item>
+
+			<ion-item>
+				<ion-label>Off</ion-label>
+				<ion-radio [checked]="!settingsData.getSoundOn()" (click)="settingsData.setSoundOn(false)"></ion-radio>
+			</ion-item>
+
+		</ion-list>
+
 	</ion-list>
 
 </ion-content>

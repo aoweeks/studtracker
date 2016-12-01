@@ -26,6 +26,8 @@ export class SettingsData {
   	this.fourColourDeck = isFourColours;
   }
 
+
+
   getFiveOrSevenMode(): number {
 
     console.log("GET: " + this.sevenCardModeOn);
@@ -39,6 +41,7 @@ export class SettingsData {
   }
 
 
+
   getHapticOn(): boolean {
     return this.hapticOn;
   }
@@ -47,12 +50,14 @@ export class SettingsData {
     this.hapticOn = isHapticOn;
   }
 
+
+
   getSoundOn(): boolean {
     return this.soundOn;
   }
 
   setSoundOn(isSoundOn: boolean): void {
-
+    this.soundOn = isSoundOn;
   }
 
 }

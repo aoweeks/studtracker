@@ -90,7 +90,7 @@ export class DeckModel {
 
 			if(handSize < numOfCardMode) {
 				currentCard.status = "in-player-hand";
-				this.playerHandSound.play();
+				this.playSound('player-hand');
 				Vibration.vibrate(200);
 				this.playerHand.addCardToHand(currentCard);
 			}
@@ -182,10 +182,15 @@ export class DeckModel {
 
 		if(this.settingsData.getSoundOn()){
 
+			switch(soundToPlay){
 
-			if(soundToPlay == "other-hand"){
+			case "other-hand":
 				this.otherHandSound.play();
-				console.log("should be playing");
+				break;
+
+			case "player-hand":
+				this.playerHandSound.play();
+				break;
 			}
 
 		}
