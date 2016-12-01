@@ -1,13 +1,17 @@
-import {Directive, ElementRef, Input, OnInit, OnDestroy} from '@angular/core';
+import {Directive, ElementRef, Input, OnInit, OnDestroy, Output, EventEmitter} from '@angular/core';
 import {Gesture} from 'ionic-angular/gestures/gesture';
 declare var Hammer;
 
 @Directive({
-  selector: '[double-tap]'
+  selector: '[doubleTap]'
 })
 export class DoubleTapDirective implements OnInit, OnDestroy {
   el: HTMLElement;
   pressGesture: Gesture;
+
+   @Output()
+   doubleTap: EventEmitter<any> = new EventEmitter();
+
 
   constructor(el: ElementRef) {
     this.el = el.nativeElement;
@@ -21,7 +25,8 @@ export class DoubleTapDirective implements OnInit, OnDestroy {
 		});
 		this.pressGesture.listen();
 		this.pressGesture.on('tap', e => {
-		  console.log(this.el.click);
+		  this.doubleTap.emit(e);
+		  console.log('pressed!!');
 		});
 	}
 

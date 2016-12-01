@@ -26,7 +26,7 @@
 		<ion-row *ngFor="let suit of suits; let suitPos = index" class="suit-row">
 			<ion-col *ngFor="let rank of ranks; let rankPos = index" class="card-face-big-wrapper">
 				<a (tap)="deck.toggleCardInDeck(suitPos, rankPos)"
-				    (press)="deck.toggleCardInPlayerHand(suitPos, rankPos)" 
+				    (doubleTap)="onDoubleTap($event, suitPos, rankPos)" 
     				[innerHtml]='deck.getCardFace(suitPos, rankPos) | safe'
 				   	[ngClass]="{ cardIsntInDeck : deck.getCardStatus(suitPos, rankPos) != 'in-the-deck',
 				   		cardIsInPlayerHand : deck.getCardStatus(suitPos, rankPos) == 'in-player-hand',
