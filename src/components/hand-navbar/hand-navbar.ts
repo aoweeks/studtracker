@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PlayerHandModel } from '../../models/player-hand';
+import { SettingsData } from '../../providers/settings-data';
 
 /*
   Generated class for the HandNavbar component.
@@ -14,7 +15,7 @@ import { PlayerHandModel } from '../../models/player-hand';
 export class HandNavbarComponent {
 
 
-  constructor(private playerHand: PlayerHandModel) {
+  constructor(private playerHand: PlayerHandModel, private settingsData: SettingsData) {
   }
 
 
