@@ -37,7 +37,6 @@ export class HomePage {
   	this.navCtrl.push(StatsPage);
   }
 
-
   //DEV PURPOSES ONLY
   consolelog(data){
   	console.log(data);

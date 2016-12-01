@@ -10,6 +10,7 @@ import { DeckModel } from '../models/deck';
 import { PlayerHandModel } from '../models/player-hand';
 import { SafePipe } from '../pipes/safe';
 import { HandNavbarComponent } from '../components/hand-navbar/hand-navbar';
+import { DoubleTapDirective } from '../directives/double-tap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HandNavbarComponent } from '../components/hand-navbar/hand-navbar';
     SettingsPage,
     StatsPage,
     SafePipe,
-    HandNavbarComponent
+    HandNavbarComponent,
+    DoubleTapDirective
   ],
   imports: [
     IonicModule.forRoot(MyApp)
