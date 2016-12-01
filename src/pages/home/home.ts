@@ -37,9 +37,14 @@ export class HomePage {
   	this.navCtrl.push(StatsPage);
   }
 
+  //DEV PURPOSES ONLY
+  consolelog(data){
+  	console.log(data);
+  }
 
-  onDoubleTap(e: Event, suitPos, rankPos): void{
+  onDoubleTap(e: Event, suitPos: number, rankPos: number): void{
   	this.deck.toggleCardInPlayerHand(suitPos, rankPos);
+  	console.log("IT WORKED!!" + suitPos + " " + rankPos);
   }
 
 

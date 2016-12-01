@@ -17,8 +17,5 @@ export class StatsPage {
 
   constructor(public navCtrl: NavController) {}
 
-  ionViewDidLoad() {
-    console.log('Hello StatsPage Page');
-  }
 
 }
