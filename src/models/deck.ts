@@ -176,7 +176,9 @@ export class DeckModel {
 		return this.cards[suitPos][rankPos].face;
 	}
 
-
+	getTotalCardsInDeck(): number {
+		return this.totalCardsInDeck;
+	}
 
 	playSound(soundToPlay: string): void {
 

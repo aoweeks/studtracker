@@ -10,7 +10,7 @@
     		</ion-icon>
 		</button>
 
-		<button ion-button icon-only (click)="deck.resetDeck()">
+		<button ion-button icon-only (click)="deck.resetDeck()" [ngClass]="{ greyedOut : deck.getTotalCardsInDeck() == 52 }">
     		<ion-icon name="refresh">
     		</ion-icon>
 		</button>
@@ -25,7 +25,7 @@
 	<ion-grid class="card-grid">
 		<ion-row *ngFor="let suit of suits; let suitPos = index" class="suit-row">
 			<ion-col *ngFor="let rank of ranks; let rankPos = index" class="card-face-big-wrapper">
-				<a (tap)="deck.toggleCardInDeck(suitPos, rankPos)"
+				<span (tap)="deck.toggleCardInDeck(suitPos, rankPos)"
 				    (doubleTap)="onDoubleTap($event, suitPos, rankPos)" 
     				[innerHtml]='deck.getCardFace(suitPos, rankPos) | safe'
 				   	[ngClass]="{ cardIsntInDeck : deck.getCardStatus(suitPos, rankPos) != 'in-the-deck',
@@ -33,7 +33,7 @@
 				   		twoColourDeck : settingsData.fourColourDeck != true }"
 				 	>
 
-				</a>
+				</span>
 			</ion-col>
 			<ion-col class="suit-odds">
 				{{ deck.getSuitOdds(suitPos) | number : '1.1-1' }}%
