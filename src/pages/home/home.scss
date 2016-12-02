@@ -1,5 +1,11 @@
 $card-transition-time: 0.25s;
 
+/* --- COLOuRS --- 
+====================*/
+
+$greyed-out-light: #BD95CC;
+$greyed-out-dark: #9455AB;
+
 
 page-home {
 
@@ -16,11 +22,11 @@ page-home {
 
 
 	ion-icon{
-		transition: 0.25s;
+		transition: $card-transition-time;
 	}
 
 	.greyedOut ion-icon{
-		color: #BD95CC;
+		color: $greyed-out-light;
 	}
 
 
@@ -54,11 +60,11 @@ page-home {
 	.cardIsntInDeck{
 
 		.card-background{
-			fill: #BD95CC;
+			fill: $greyed-out-dark;
 		}
 
 		.club-colour, .heart-colour, .spade-colour, .diamond-colour{
-			fill: #9455AB;
+			fill: $greyed-out-dark;
 		}
 	}
 
