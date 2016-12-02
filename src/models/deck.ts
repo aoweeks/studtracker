@@ -60,7 +60,7 @@ export class DeckModel {
 
 			currentCard.status = "in-other-hand";
 			this.playSound("other-hand");
-			Vibration.vibrate(100);
+			if(this.settingsData.getHapticOn()) Vibration.vibrate(50);
 
 		} else{
 
@@ -91,7 +91,7 @@ export class DeckModel {
 			if(handSize < numOfCardMode) {
 				currentCard.status = "in-player-hand";
 				this.playSound('player-hand');
-				Vibration.vibrate(200);
+				if(this.settingsData.getHapticOn()) Vibration.vibrate(100);
 				this.playerHand.addCardToHand(currentCard);
 			}
 		}
