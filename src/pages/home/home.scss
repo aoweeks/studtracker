@@ -106,21 +106,6 @@ page-home {
 
 	.suit-odds{
 
-		// /* Safari */
-		// -webkit-transform: rotate(90deg);
-
-		// /* Firefox */
-		// -moz-transform: rotate(90deg);
-
-		// /* IE */
-		// -ms-transform: rotate(90deg);
-
-		// /* Opera */
-		// -o-transform: rotate(90deg);
-
-		// /* Internet Explorer */
-		// filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-
 		flex: 0 0 $odds-size;
 		max-width: $odds-size;
 		font-size: $odds-size;
@@ -130,7 +115,6 @@ page-home {
 		white-space: nowrap;
 		padding: 0;
 		text-align: center;
-
 
 
 		/* iOS/Android */
