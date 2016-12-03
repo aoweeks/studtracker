@@ -12,7 +12,7 @@ page-home {
 	.card-grid{
 		display: flex;
 		flex-direction: column;
-		height: 97%;
+		height: 99%;
 	}
 
 
@@ -24,6 +24,7 @@ page-home {
 
 	.card-face-big-wrapper{
 		flex: 1;
+		padding: 0.5vw;
 	}
 
 
@@ -120,10 +121,36 @@ page-home {
 		flex: 0 0 $odds-size;
 		max-width: $odds-size;
 		font-size: $odds-size;
-		text-align: center;
+		line-height: $odds-size * 2;
+		height: $odds-size / 2;
 		overflow: visible;
 		white-space: nowrap;
+		padding: 0;
+		text-align: center;
 
+
+
+		/* Safari */
+		-webkit-transform-origin: 100% 100%;
+		-webkit-transform: rotate(90deg);
+
+		/* Firefox */
+		-moz-transform: rotate(0deg);
+
+		/* IE */
+		-ms-transform: rotate(0deg);
+
+		/* Opera */
+		-o-transform: rotate(0deg);
+
+		/* Internet Explorer */
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+	}
+
+	.suit-odds-text{
+		position: relative;
+		left: 0px;
+		top: 0px;
 	}
 
 	#rank-row{
@@ -141,8 +168,13 @@ page-home {
 
 	#stats-button-container{
 		flex: 0 0 $odds-size;
-		height: $odds-size;
+		max-height: $odds-size;
+		min-height: $odds-size;
+		max-width: $odds-size;
+		min-height: $odds-size;
 	}
 
-
+	.odds-percentage{
+		font-size: $odds-size / 2;
+	}
 }

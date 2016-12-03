@@ -36,12 +36,12 @@
 				</span>
 			</ion-col>
 			<ion-col class="suit-odds">
-				ooooooo<!-- {{ deck.getSuitOdds(suitPos) | number : '1.1-1' }}% -->
+				{{ deck.getSuitOdds(suitPos) | number : '1.1-1' }}<span class="odds-percentage">%</span>
 			</ion-col>
 		</ion-row>
 		<ion-row id="rank-row">
 			<ion-col *ngFor="let rank of ranks; let rankPos = index" class="rank-odds">
-				{{ deck.getRankOdds(rankPos) | number : '1.1-1' }}%
+				{{ deck.getRankOdds(rankPos) | number : '1.1-1' }}<span class="odds-percentage">%</span>
 			</ion-col>
 			<ion-col id="stats-button-container">
 				<a (click)="openStatsPage()">
