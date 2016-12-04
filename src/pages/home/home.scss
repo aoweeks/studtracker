@@ -109,8 +109,7 @@ page-home {
 		flex: 0 0 $odds-size;
 		max-width: $odds-size;
 		font-size: $odds-size;
-		line-height: $odds-size * 2;
-		height: $odds-size / 2;
+		height: $odds-size;
 		overflow: visible;
 		white-space: nowrap;
 		padding: 0;
@@ -118,7 +117,7 @@ page-home {
 
 
 		/* iOS/Android */
-		-webkit-transform-origin: 100% 100%;
+		-webkit-transform-origin: 50% 50%;
 		-webkit-transform: rotate(90deg);
 
 		/* Windows */
@@ -127,10 +126,16 @@ page-home {
 	}
 
 	.suit-odds-text{
-		position: relative;
-		left: 0px;
-		top: 0px;
+		text-align: center;
+		margin-left: -100%;
+		margin-right: -100%;
 	}
+	.suit-odds-text:after{
+		content: "%";
+		font-size: $odds-size / 2;
+	}
+
+
 
 	#rank-row{
 		flex: 0 0 $odds-size;
@@ -144,6 +149,12 @@ page-home {
 		font-size: $odds-size;
 		text-align: center;
 	}
+	
+	.rank-odds-text:after{
+		content: "%";
+		font-size: $odds-size / 2;
+	}
+
 
 	#stats-button-container{
 		font-size: $odds-size;
@@ -154,7 +165,4 @@ page-home {
 		min-height: $odds-size;
 	}
 
-	.odds-percentage{
-		font-size: $odds-size / 2;
-	}
 }
