@@ -1,33 +1,62 @@
 page-stats {
 
+	$base-font-size: 3vw;
+
+	ion-grid{
+
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+
+	}
+
+
+
 	.hand-row{
-		//display: block;
-		font-size: 1.25em;
+		font-size: $base-font-size;
+		padding-left: 1vw;
+		padding-right: 1vw;
+		flex: 1;
+
+		.hand-type{
+			flex: 30;
+		}
+
+		.next-card-odds{
+			flex: 7;
+			text-align: center;
+		}
+
+		.divider{
+			flex: 2;
+			text-align: center;
+		}
+
+		.end-of-hand-odds{
+			flex: 7;
+			text-align: center;
+		}
+
+		.spacer{
+			flex: 14;
+		}
+
+	}
+
+	.info-row{
+		flex: 0 0 $base-font-size;
+		align-items: $base-font-size;
+	}
+
+	.title-cell{
+		font-size: $base-font-size / 3;
 	}
 
 
-	.hand-odds{
-		float: right;
-	}
-
-	#left-column{
-
-	}
-
-	#right-column{
-
-	}
 
 
-
-	.block-wrapper{
-		display: block;
-	}
-
-	
 
 	h3{
-		margin-left: 1em;
-		margin-right: 1em;
+		font-size: 3.5vw;
 	}
 }
