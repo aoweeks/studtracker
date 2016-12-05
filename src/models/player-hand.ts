@@ -71,6 +71,11 @@ export class PlayerHandModel {
 		this.hand = [];
 	}
 
+	public trimToFive(): void{
+		console.log("SPLICING: " + this.hand.splice(4, 2) );
+		this.hand.splice(5, 2);
+	}
+
 	private sortHand(): void {
 
 	}

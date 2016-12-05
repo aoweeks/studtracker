@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { PlayerHandModel } from '../models/player-hand';
 
 /*
   Generated class for the SettingsData provider.
@@ -14,7 +15,7 @@ export class SettingsData {
   private hapticOn: boolean = true;
   private soundOn: boolean = true;
 
-  constructor() {
+  constructor(private playerHand: PlayerHandModel) {
 
   }
 
@@ -29,15 +30,15 @@ export class SettingsData {
 
 
   getFiveOrSevenMode(): number {
-
-    console.log("GET: " + this.sevenCardModeOn);
     return this.sevenCardModeOn ?  7 : 5;
 
   }
 
   setFiveOrSevenMode(isSevenMode: boolean): void {
+    
+    if(isSevenMode == false) this.playerHand.trimToFive();
+
     this.sevenCardModeOn = isSevenMode;
-    console.log("SET: " + isSevenMode);
   }
 
 
