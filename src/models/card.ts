@@ -15,8 +15,19 @@ export class CardModel {
 
 	}
 
-	public getFace(){
+	public getFace(): string{
 		return this.face;
 	}
+
+	public getSuit(): number{
+		return this.suitPos;
+	}
+
+	public getRank(): number{
+		return this.rankPos;
+	}
+
+
+
 
 }

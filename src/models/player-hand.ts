@@ -26,6 +26,9 @@ export class PlayerHandModel {
     //     return PlayerHandModel.instance;
     // }
 
+    public getHand(): CardModel[]{
+    	return this.hand;
+    }
 
     public getHandSize(): number {
     	return this.hand.length;
