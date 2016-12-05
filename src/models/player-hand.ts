@@ -1,30 +1,19 @@
 import { CardModel } from '../models/card';
+import { DeckModel } from '../models/deck';
 import { Injectable } from '@angular/core';
 
 
 @Injectable()
 export class PlayerHandModel {
 
-	//private static instance: PlayerHandModel;
 
 	private hand: CardModel[] = Array(0);
 
-	// public devNumber: any;
 
-	constructor(){
+	constructor(/*public deck: DeckModel*/){
 
 	}
 
-	   
-    // static getInstance() {
-    //     if (!PlayerHandModel.instance) {
-    //         PlayerHandModel.instance = new PlayerHandModel();
-    //         // ... any one time initialization goes here ...
-    //         PlayerHandModel.instance.devNumber = Math.random();
-            
-    //     }
-    //     return PlayerHandModel.instance;
-    // }
 
     public getHand(): CardModel[]{
     	return this.hand;
@@ -71,9 +60,10 @@ export class PlayerHandModel {
 		this.hand = [];
 	}
 
-	public trimToFive(): void{
-		console.log("SPLICING: " + this.hand.splice(4, 2) );
-		this.hand.splice(5, 2);
+	public trimToFive(): void {
+		while(this.hand.length > 5){
+			//this.deck.toggleCardInPlayerHand(this.hand[5].getSuit(), this.hand[5].getRank());
+		}
 	}
 
 	private sortHand(): void {

@@ -74,7 +74,7 @@ export class DeckModel {
 		this.updateOdds();
 	}
 
-	toggleCardInPlayerHand(suitPos: number, rankPos: number) : void {
+	toggleCardInPlayerHand(suitPos: number, rankPos: number, uiSound: boolean = true) : void {
 
 		let currentCard = this.cards[suitPos][rankPos];
 
@@ -90,7 +90,7 @@ export class DeckModel {
 
 			if(handSize < numOfCardMode) {
 				currentCard.status = "in-player-hand";
-				this.playSound('player-hand');
+				if(uiSound) this.playSound('player-hand');
 				if(this.settingsData.getHapticOn()) Vibration.vibrate(100);
 				this.playerHand.addCardToHand(currentCard);
 			}
