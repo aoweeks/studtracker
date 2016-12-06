@@ -12,6 +12,7 @@ import { PlayerHandModel } from '../models/player-hand';
 import { SafePipe } from '../pipes/safe';
 import { HandNavbarComponent } from '../components/hand-navbar/hand-navbar';
 import { DoubleTapDirective } from '../directives/double-tap';
+import { forwardRef } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,6 @@ import { DoubleTapDirective } from '../directives/double-tap';
     SettingsPage,
     StatsPage
   ],
-  providers: [DeckModel, PlayerHandModel, SettingsData, HandAnalyser, {provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [forwardRef(() => DeckModel), PlayerHandModel, SettingsData, HandAnalyser, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}
