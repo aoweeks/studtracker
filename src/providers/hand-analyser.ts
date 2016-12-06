@@ -14,12 +14,11 @@ export class HandAnalyser {
   					   	"10", "JACK", "QUEEN", "KING", "ACE"];
 
   constructor() {
-
   }
 
   analyseThisHand(hand: CardModel[]): string{
 
-  	let handRanking = this.giveHandValue(hand);
+  	let handRanking = this.findBestComboScore(hand);
 
   	switch(handRanking){
   		case -1:
@@ -47,11 +46,31 @@ export class HandAnalyser {
 
   }
 
+  findBestComboScore(hand: CardModel[]): number {
+
+  	let combos: number[][] = this.getCombinations(5, hand.length);
+  	let highestHandScore: number = -1;
+
+  	for(let combo of combos){
+
+  		let fiveCardHand: CardModel[] = [];
+  		for(let whichCard of combo){
+  			if(hand[whichCard]) fiveCardHand.push(hand[whichCard]);
+  		}
+
+  		let currentHandScore = this.getHandValue(fiveCardHand);
+  		if (currentHandScore > highestHandScore) highestHandScore = currentHandScore;
+
+  	}
+
+  	return highestHandScore;
+  }
 
 
 
 
-  giveHandValue(hand: CardModel[]): number{
+
+  getHandValue(hand: CardModel[]): number{
 
   	if(hand.length < 1){
   		return -1;
@@ -116,6 +135,7 @@ export class HandAnalyser {
 
 		if(straight && flush) return 21;
 
+		//console.log('called getcombinations' + ' ' + k + ' ' + n);
 		if(quadCount > 0) return 20;
 
 		if( (tripCount > 1) || (tripCount > 0 && pairCount > 0) ) return 19;
@@ -139,8 +159,8 @@ export class HandAnalyser {
   }
 
 
-	getCombinations(k,n) {
-		console.log('called getcombinations' + ' ' + k + ' ' + n);
+	getCombinations(k,n): number[][] {
+		//console.log('called getcombinations' + ' ' + k + ' ' + n);
 		
 		let result = [], comb = [];
 	    function next_comb(comb, k, n ,i = null) {
@@ -172,7 +192,7 @@ export class HandAnalyser {
 		while (next_comb(comb, k, n)) {
 			result.push(comb.slice());
 		}
-		
+
 		return result;
 	}
 

@@ -14,6 +14,7 @@ export class DoubleTapDirective implements OnInit, OnDestroy {
 
 
   constructor(el: ElementRef) {
+  	//Which element did the double-tap come from
     this.el = el.nativeElement;
   }
 
@@ -26,7 +27,6 @@ export class DoubleTapDirective implements OnInit, OnDestroy {
 		this.pressGesture.listen();
 		this.pressGesture.on('tap', e => {
 		  this.doubleTap.emit(e);
-		  console.log('pressed!!');
 		});
 	}
 
