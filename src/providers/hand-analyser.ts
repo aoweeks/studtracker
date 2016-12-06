@@ -20,6 +20,12 @@ export class HandAnalyser {
 
   	let handRanking = this.findBestComboScore(hand);
 
+  	return this.getHandRankName(handRanking);
+
+  }
+
+  //Take number of hand rank and return the name as a string
+  getHandRankName(handRanking: number): string{
   	switch(handRanking){
   		case -1:
   			return "NO HAND";
@@ -43,7 +49,6 @@ export class HandAnalyser {
   			return "STRAIGHT FLUSH";
 
   	}
-
   }
 
   findBestComboScore(hand: CardModel[]): number {
