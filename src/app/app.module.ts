@@ -1,4 +1,4 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler, forwardRef } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { TranslateModule } from 'ng2-translate/ng2-translate';
 import { MyApp } from './app.component';
@@ -12,7 +12,6 @@ import { PlayerHandModel } from '../models/player-hand';
 import { SafePipe } from '../pipes/safe';
 import { HandNavbarComponent } from '../components/hand-navbar/hand-navbar';
 import { DoubleTapDirective } from '../directives/double-tap';
-import { forwardRef } from '@angular/core';
 
 @NgModule({
   declarations: [

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CardModel } from '../models/card';
+import { DeckModel } from '../models/deck';
 
 /*
   Generated class for the HandAnalyzer provider.
@@ -10,10 +11,12 @@ import { CardModel } from '../models/card';
 @Injectable()
 export class HandAnalyser {
 
-  private cardNames = ["2", "3", "4", "5", "6", "7", "8", "9",
+  	private cardNames: string[] = ["2", "3", "4", "5", "6", "7", "8", "9",
   					   	"10", "JACK", "QUEEN", "KING", "ACE"];
 
-  constructor() {
+	private potentialHandOdds: number[] = Array(22);
+
+  constructor(public deck: DeckModel) {
   }
 
   analyseThisHand(hand: CardModel[]): string{
@@ -131,7 +134,6 @@ export class HandAnalyser {
 	  				streak = 0;
 	  			}
 	  		}
-	  		//console.log(streak);
 	  	}
 
 	  	if(streak >= 5) straight = true;
@@ -140,7 +142,6 @@ export class HandAnalyser {
 
 		if(straight && flush) return 21;
 
-		//console.log('called getcombinations' + ' ' + k + ' ' + n);
 		if(quadCount > 0) return 20;
 
 		if( (tripCount > 1) || (tripCount > 0 && pairCount > 0) ) return 19;
@@ -202,4 +203,52 @@ export class HandAnalyser {
 	}
 
 
+	calculatePotentialHandValues(currentHand: CardModel[], cardsToGo: number): void {
+
+
+		let remainingDeck: CardModel[] = this.deck.getTheCardsInDeck();
+		let newHandValues: number[] = [];
+		let newHand: CardModel[] = [];
+
+		for(let i = 0; i < remainingDeck.length; i++){
+			newHand = currentHand.slice(0);
+			newHand.push(remainingDeck[i]);
+
+			newHandValues.push(this.findBestComboScore(newHand));
+
+		}
+
+
+
+		for(let i = 0; i < cardsToGo; i++){
+			// currentHand.push(remainingDeck.splice());
+		}
+
+		this.calculatePotentialHandOdds(newHandValues); 
+	}
+
+	calculatePotentialHandOdds(potentialHandValues: number[]): void {
+
+		let tallyOfHandValues = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+		for(let handValue of potentialHandValues){
+			//Increment the chances of this hand, but also all
+			//weaker hands as it's '% of making this hand (or better)'
+			for(let i = 0; i <= handValue; i++){
+				tallyOfHandValues[i]++;
+			}
+		}
+
+		for(let i = 0; i < 22; i++){
+			this.potentialHandOdds[i] = (tallyOfHandValues[i] / potentialHandValues.length) * 100;
+		}
+
+		console.log(this.potentialHandOdds);
+
+	}
+
+
+	getPotentialHandOdds(whichHand: number): number{
+		return this.potentialHandOdds[whichHand];
+	}
 }

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { HandAnalyser } from '../../providers/hand-analyser';
+import { PlayerHandModel } from '../../models/player-hand';
 
 
 
@@ -15,7 +17,14 @@ import { NavController } from 'ionic-angular';
 })
 export class StatsPage {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController, private analyser: HandAnalyser, private playerHand: PlayerHandModel) {
 
+  	console.log("CONSTRUCTED");
+  	this.analyser.calculatePotentialHandValues(playerHand.getHand(), 1);
+  }
+
+  ionViewDidLoad(){
+  	console.log("LOADED");
+  }
 
 }

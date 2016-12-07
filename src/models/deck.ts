@@ -180,6 +180,21 @@ export class DeckModel {
 		return this.totalCardsInDeck;
 	}
 
+	getTheCardsInDeck(): CardModel[] {
+
+
+		let cardsInDeck: CardModel[] = [];
+		for(let suit = 0; suit < 4; suit++){
+			for(let rank = 0; rank < 13; rank++){
+				if(this.cards[suit][rank].status == "in-the-deck"){
+					cardsInDeck.push(this.cards[suit][rank]);
+				}
+			}
+		}
+
+		return cardsInDeck;
+	}
+
 	playSound(soundToPlay: string): void {
 
 		if(this.settingsData.getSoundOn()){

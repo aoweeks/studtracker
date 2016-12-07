@@ -1,7 +1,6 @@
 import { CardModel } from '../models/card';
 import { DeckModel } from '../models/deck';
-import { Injectable, Inject } from '@angular/core';
-import { forwardRef } from '@angular/core';
+import { Injectable, Inject, forwardRef } from '@angular/core';
 
 
 @Injectable()
@@ -10,8 +9,7 @@ export class PlayerHandModel {
 
 	private hand: CardModel[] = Array(0);
 
-	constructor(/*@Inject(forwardRef(() => DeckModel)) deck: DeckModel*/){
-
+	constructor(/*@Inject(forwardRef(() => DeckModel)) deck: DeckModel*/){ 
 	}
 
 
