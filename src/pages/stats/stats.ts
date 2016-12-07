@@ -17,10 +17,16 @@ import { PlayerHandModel } from '../../models/player-hand';
 })
 export class StatsPage {
 
-  constructor(public navCtrl: NavController, private analyser: HandAnalyser, private playerHand: PlayerHandModel) {
+	private handRanks = ["PAIR", "2 PAIR", "3 OF A KIND", "STRAIGHT", "FLUSH",
+						 "FULL HOUSE", "4 OF A KIND", "STRAIGHT FLUSH"];
+	public handRows = [0,2,4,6];
 
-  	console.log("CONSTRUCTED");
+  constructor(	public navCtrl: NavController,
+  				private analyser: HandAnalyser,
+  				private playerHand: PlayerHandModel) {
+
   	this.analyser.calculatePotentialHandValues(playerHand.getHand(), 1);
+
   }
 
   ionViewDidLoad(){

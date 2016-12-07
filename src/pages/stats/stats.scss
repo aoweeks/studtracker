@@ -18,22 +18,19 @@ page-stats {
 		padding-right: 1vw;
 		flex: 1;
 
+
+
 		.hand-type{
 			flex: 30;
 		}
 
 		.next-card-odds{
-			flex: 9;
-			text-align: center;
-		}
-
-		.divider{
-			flex: 2;
+			flex: 10;
 			text-align: center;
 		}
 
 		.end-of-hand-odds{
-			flex: 9;
+			flex: 10;
 			text-align: center;
 		}
 
@@ -41,15 +38,23 @@ page-stats {
 			flex: 10;
 		}
 
+
+
+		.percentage{
+			font-size: $base-font-size / 2;
+		}
+
 	}
 
 	.info-row{
 		flex: 0 0 $base-font-size;
 		align-items: $base-font-size;
-	}
 
-	.title-cell{
-		font-size: $base-font-size / 3;
+
+
+		.title-cell{
+			font-size: $base-font-size / 3;
+		}
 	}
 
 

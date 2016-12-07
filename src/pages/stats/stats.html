@@ -28,8 +28,6 @@
 			<ion-col class="next-card-odds title-cell">
 				NEXT CARD
 			</ion-col>
-			<ion-col class="divider">
-			</ion-col>
 			<ion-col class="next-card-odds title-cell">
 				END OF HAND
 			</ion-col>
@@ -40,22 +38,17 @@
 			<ion-col class="next-card-odds title-cell">
 				NEXT CARD
 			</ion-col>
-			<ion-col class="divider">
-			</ion-col>
 			<ion-col class="next-card-odds title-cell">
 				END OF HAND
 			</ion-col>
 		</ion-row>
 
-		<ion-row class="hand-row">
+		<ion-row *ngFor="let rowNumber of handRows" class="hand-row">
 			<ion-col class="hand-type">
-				PAIR:
+				{{ handRanks[rowNumber] }}
 			</ion-col>
 			<ion-col class="next-card-odds">
-				{{ analyser.getPotentialHandOdds(14) | number: '1.0-1' }}%
-			</ion-col>
-			<ion-col class="divider">
-				/
+				{{ analyser.getPotentialHandOdds(rowNumber + 14) | number: '1.0-1' }}<span class="percentage">%</span>
 			</ion-col>
 			<ion-col class="next-card-odds">
 				88.8
@@ -63,105 +56,16 @@
 			<ion-col class="spacer">
 			</ion-col>	
 			<ion-col class="hand-type">
-				3 OF A KIND:
+				{{ handRanks[rowNumber + 1] }}:
 			</ion-col>
 			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="divider">
-				/
+				{{ analyser.getPotentialHandOdds(rowNumber + 14 + 1) | number: '1.0-1' }}<span class="percentage">%</span>
 			</ion-col>
 			<ion-col class="next-card-odds">
 				88.8
 			</ion-col>
 		</ion-row>
 
-		<ion-row class="hand-row">
-			<ion-col class="hand-type">
-				PAIR:
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="divider">
-				/
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="spacer">
-			</ion-col>	
-			<ion-col class="hand-type">
-				4 OF A KIND:
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="divider">
-				/
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-		</ion-row>
-
-		<ion-row class="hand-row">
-			<ion-col class="hand-type">
-				PAIR:
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="divider">
-				/
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="spacer">
-			</ion-col>	
-			<ion-col class="hand-type">
-				3 OF A KIND:
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="divider">
-				/
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-		</ion-row>
-
-		<ion-row class="hand-row">
-			<ion-col class="hand-type">
-				PAIR:
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="divider">
-				/
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="spacer">
-			</ion-col>	
-			<ion-col class="hand-type">
-				STRAIGHT FLUSH:
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-			<ion-col class="divider">
-				/
-			</ion-col>
-			<ion-col class="next-card-odds">
-				88.8
-			</ion-col>
-		</ion-row>
 
 	</ion-grid>
 
