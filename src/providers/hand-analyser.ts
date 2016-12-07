@@ -14,7 +14,7 @@ export class HandAnalyser {
   	private cardNames: string[] = ["2", "3", "4", "5", "6", "7", "8", "9",
   					   	"10", "JACK", "QUEEN", "KING", "ACE"];
 
-	private potentialHandOdds: number[] = Array(22);
+	private nextCardOdds: number[] = Array(22);
 
   constructor(public deck: DeckModel) {
   }
@@ -240,15 +240,14 @@ export class HandAnalyser {
 		}
 
 		for(let i = 0; i < 22; i++){
-			this.potentialHandOdds[i] = (tallyOfHandValues[i] / potentialHandValues.length) * 100;
+			this.nextCardOdds[i] = (tallyOfHandValues[i] / potentialHandValues.length) * 100;
 		}
 
-		console.log(this.potentialHandOdds);
 
 	}
 
 
-	getPotentialHandOdds(whichHand: number): number{
-		return this.potentialHandOdds[whichHand];
+	getNextCardOdds(whichHand: number): number{
+		return this.nextCardOdds[whichHand];
 	}
 }
