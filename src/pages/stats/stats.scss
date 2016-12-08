@@ -57,8 +57,20 @@ page-stats {
 		}
 	}
 
+	.cardsRemaining{
+		.odds-text:after{
+			content: "%";
+			font-size: $base-font-size / 2;
+		}
+	}
 
+	.noCardsRemaining{
 
+		.odds-text:after{
+			content: "N/A";
+		}
+
+	}
 
 
 	h3{
