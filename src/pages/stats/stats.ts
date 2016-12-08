@@ -20,7 +20,7 @@ export class StatsPage {
 
 	private handRanks = ["PAIR", "2 PAIR", "3 OF A KIND", "STRAIGHT", "FLUSH",
 						 "FULL HOUSE", "4 OF A KIND", "STRAIGHT FLUSH"];
-	public handRows = [0,2,4,6];
+	private handRows = [0,2,4,6];
 	private numberOfCardsRemaining;
 
   constructor(	public navCtrl: NavController,
@@ -30,7 +30,7 @@ export class StatsPage {
 
 
     this.numberOfCardsRemaining = this.settingsData.getFiveOrSevenMode() - this.playerHand.getHandSize();
-    console.log("Made it into constructor");
+    
     if(this.numberOfCardsRemaining > 0){
   		this.analyser.calculatePotentialHandValues(playerHand.getHand(), this.numberOfCardsRemaining);
   	} else{

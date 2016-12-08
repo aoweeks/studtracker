@@ -24,8 +24,9 @@ export class HomePage {
   					  "J", "Q", "K", "A"];
 
 
-  constructor(public navCtrl: NavController, public deck: DeckModel, private playerHand: PlayerHandModel,
-  		public settingsData: SettingsData) {
+  constructor(	public navCtrl: NavController,
+  				public deck: DeckModel, private playerHand: PlayerHandModel,
+  				public settingsData: SettingsData) {
 
   }
 

@@ -29,7 +29,8 @@ export class DeckModel {
 
 
 
-	constructor(private playerHand: PlayerHandModel, private settingsData: SettingsData){
+	constructor(private playerHand: PlayerHandModel,
+				private settingsData: SettingsData){
 		
 		this.faceHelper = new FaceHelper;
 

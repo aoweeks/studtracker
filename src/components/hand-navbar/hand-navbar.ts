@@ -25,7 +25,9 @@ export class HandNavbarComponent {
                             </svg>`
 
 
-  constructor(private playerHand: PlayerHandModel, private settingsData: SettingsData, private analyser: HandAnalyser) {
+  constructor(  private playerHand: PlayerHandModel,
+                private settingsData: SettingsData,
+                private analyser: HandAnalyser) {
   }
 
 
