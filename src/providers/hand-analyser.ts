@@ -15,6 +15,7 @@ export class HandAnalyser {
   					   	"10", "JACK", "QUEEN", "KING", "ACE"];
 
 	private nextCardOdds: number[] = Array(22);
+	private endOfHandOdds: number[] = Array(22);
 
   constructor(public deck: DeckModel) {
   }
@@ -207,29 +208,44 @@ export class HandAnalyser {
 
 
 		let remainingDeck: CardModel[] = this.deck.getTheCardsInDeck();
-		let newHandValues: number[] = [];
+		let nextCardValues: number[] = [];
 		let newHand: CardModel[] = [];
 
-		for(let i = 0; i < remainingDeck.length; i++){
-			newHand = currentHand.slice(0);
-			newHand.push(remainingDeck[i]);
-
-			newHandValues.push(this.findBestComboScore(newHand));
-
-		}
+		let combos: number[][] = this.getCombinations(cardsToGo, remainingDeck.length);
+		let endOfHandValues: number[] = [];
 
 
+		console.log("Made into potential values");
 
-		for(let i = 0; i < cardsToGo; i++){
-			// currentHand.push(remainingDeck.splice());
-		}
+			for(let i = 0; i < combos.length; i++){
+				newHand = currentHand.slice(0);
+				
+				for(let j = 0; j < combos[i].length; j++){
+					let nextCard: CardModel = remainingDeck[combos[i][j]];
+					newHand.push(nextCard);
+				}
 
-		this.calculatePotentialHandOdds(newHandValues); 
+				endOfHandValues.push(this.findBestComboScore(newHand));
+			}
+
+			for(let j = 0; j < remainingDeck.length; j++){
+				newHand = currentHand.slice(0);
+				newHand.push(remainingDeck[j]);
+
+				nextCardValues.push(this.findBestComboScore(newHand));
+
+			}
+
+		this.endOfHandOdds = this.calculatePotentialHandOdds(endOfHandValues);
+		this.nextCardOdds = this.calculatePotentialHandOdds(nextCardValues); 
 	}
 
-	calculatePotentialHandOdds(potentialHandValues: number[]): void {
 
-		let tallyOfHandValues = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+	calculatePotentialHandOdds(potentialHandValues: number[]): number[] {
+
+		let tallyOfHandValues: number[] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		let tallyOfOdds: number[] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 		for(let handValue of potentialHandValues){
 			//Increment the chances of this hand, but also all
@@ -240,14 +256,29 @@ export class HandAnalyser {
 		}
 
 		for(let i = 0; i < 22; i++){
-			this.nextCardOdds[i] = (tallyOfHandValues[i] / potentialHandValues.length) * 100;
+			tallyOfOdds[i] = (tallyOfHandValues[i] / potentialHandValues.length) * 100;
 		}
 
+		return tallyOfOdds;
 
+	}
+
+	calculateFullHandOdds(currentHand: CardModel[]){
+		
+
+
+		this.endOfHandOdds = [null, null, null, null, null, null, null, null, null, null, null, null, null,null, null, null, null, null, null, null, null];
+		this.nextCardOdds = [null, null, null, null, null, null, null, null, null, null, null, null, null,null, null, null, null, null, null, null, null]; 
 	}
 
 
 	getNextCardOdds(whichHand: number): number{
 		return this.nextCardOdds[whichHand];
+	}
+
+
+
+	getEndOfHandOdds(whichHand: number): number{
+		return this.endOfHandOdds[whichHand];
 	}
 }

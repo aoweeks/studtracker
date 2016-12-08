@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { HandAnalyser } from '../../providers/hand-analyser';
 import { PlayerHandModel } from '../../models/player-hand';
+import { SettingsData } from '../../providers/settings-data';
 
 
 
@@ -23,9 +24,17 @@ export class StatsPage {
 
   constructor(	public navCtrl: NavController,
   				private analyser: HandAnalyser,
-  				private playerHand: PlayerHandModel) {
+  				private playerHand: PlayerHandModel,
+  				private settingsData: SettingsData) {
 
-  	this.analyser.calculatePotentialHandValues(playerHand.getHand(), 1);
+
+    let numberOfCardsRemaining: number = this.settingsData.getFiveOrSevenMode() - this.playerHand.getHandSize();
+    console.log("Made it into constructor");
+    if(numberOfCardsRemaining > 0){
+  		this.analyser.calculatePotentialHandValues(playerHand.getHand(), numberOfCardsRemaining);
+  	} else{
+  		this.analyser.calculateFullHandOdds(playerHand.getHand());
+  	}
 
   }
 

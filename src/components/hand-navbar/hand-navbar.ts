@@ -15,13 +15,32 @@ import { HandAnalyser } from '../../providers/hand-analyser';
 })
 export class HandNavbarComponent {
 
+  private blankSpaceFace = `<svg version="1.1" class="stud-card blank-card" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 360 504" enable-background="new 0 0 360 504" xml:space="preserve">
+                              <g id="Card">
+                                <path class="card-background" fill="#BD95CC" stroke="#000000" stroke-width="2.85" stroke-miterlimit="10" d="M358.561,480.959
+                                  c0,11.93-9.671,21.602-21.601,21.602H23.041c-11.93,0-21.6-9.672-21.6-21.602V23.04c0-11.93,9.67-21.6,21.6-21.6H336.96
+                                  c11.93,0,21.601,9.67,21.601,21.6V480.959z"/>
+                              </g>
+                            </svg>`
+
 
   constructor(private playerHand: PlayerHandModel, private settingsData: SettingsData, private analyser: HandAnalyser) {
   }
 
 
   getPlayerHandFaces(): string[] {
-    return this.playerHand.getHandFaces();
+    let blankSpaces: number = this.settingsData.getFiveOrSevenMode() - this.playerHand.getHandSize();
+    let playerHandFaces: string[];
+
+    playerHandFaces = this.playerHand.getHandFaces().splice(0);
+
+    //Add a blank space for each card still yet to go
+    for(let i = 0; i < blankSpaces; i++){
+      playerHandFaces.push(this.blankSpaceFace);
+    }
+
+    return playerHandFaces;
   }
 
 }

@@ -8,11 +8,10 @@
 <ion-title>
   YOUR HAND:
 
-    <div class="navbar-hand" *ngFor="let playerCard of getPlayerHandFaces()"
+    <span class="navbar-hand" *ngFor="let playerCard of getPlayerHandFaces()"
     	[ngClass]="{twoColourDeck : settingsData.fourColourDeck != true}"
     	[innerHtml]="playerCard | safe">
-    </div>
-
+    </span>
     {{ analyser.analyseThisHand( playerHand.getHand() ) }}
 
 </ion-title>
