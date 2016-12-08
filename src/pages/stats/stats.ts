@@ -20,7 +20,7 @@ export class StatsPage {
 
 	private handRanks = ["PAIR", "2 PAIR", "3 OF A KIND", "STRAIGHT", "FLUSH",
 						 "FULL HOUSE", "4 OF A KIND", "STRAIGHT FLUSH"];
-	private handRows = [0,2,4,6];
+	public handRows = [0,2,4,6];
 	private numberOfCardsRemaining;
 
   constructor(	public navCtrl: NavController,

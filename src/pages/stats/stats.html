@@ -49,7 +49,7 @@
 				 				noCardsRemaining : numberOfCardsRemaining == 0
 				 			}">
 			<ion-col class="hand-type">
-				{{ handRanks[rowNumber] }}
+				{{ handRanks[rowNumber] }}:
 			</ion-col>
 			<ion-col class="next-card-odds">
 				<span class="odds-text">{{ analyser.getNextCardOdds(rowNumber + 14) | number: '1.0-1' }}</span>
