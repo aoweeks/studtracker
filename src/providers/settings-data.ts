@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
+import { Platform } from 'ionic-angular';
 import { PlayerHandModel } from '../models/player-hand';
+import { DataService } from '../providers/data';
 
 /*
   Generated class for the SettingsData provider.
@@ -15,7 +17,9 @@ export class SettingsData {
   private hapticOn: boolean = true;
   private soundOn: boolean = true;
 
-  constructor(private playerHand: PlayerHandModel) {
+  constructor(  private playerHand: PlayerHandModel,
+                private platform: Platform,
+                private dataService: DataService) {
 
   }
 
@@ -59,6 +63,27 @@ export class SettingsData {
 
   setSoundOn(isSoundOn: boolean): void {
     this.soundOn = isSoundOn;
+  }
+
+
+
+  /*----- ACCESSING STORAGE -------
+  =================================*/
+
+  loadData() : void {
+    this.platform.ready().then((settings) => {  
+
+      this.dataService.getData().then((checklists) => {
+
+
+
+      });
+
+    });
+  }
+
+  saveData(settings: any[]) : void {
+
   }
 
 }

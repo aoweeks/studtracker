@@ -25,9 +25,14 @@ export class HomePage {
 
 
   constructor(	public navCtrl: NavController,
-  				public deck: DeckModel, private playerHand: PlayerHandModel,
+  				public deck: DeckModel,
+  				private playerHand: PlayerHandModel,
   				public settingsData: SettingsData) {
 
+  }
+
+  ionViewDidLoad(): void {
+  	this.settingsData.loadData();
   }
 
   openSettingsPage(): void {

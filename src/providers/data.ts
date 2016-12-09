@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { Storage } from '@ionic/storage';
 
 /*
   Generated class for the Data provider.
@@ -9,10 +8,13 @@ import 'rxjs/add/operator/map';
   for more info on providers and Angular 2 DI.
 */
 @Injectable()
-export class Data {
+export class DataService {
 
-  constructor(public http: Http) {
-    console.log('Hello Data Provider');
-  }
+  constructor(public storage: Storage) {
+    }
+
+    getData(): Promise<any>{
+    	return this.storage.get('');
+    }
 
 }
