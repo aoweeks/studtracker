@@ -13,8 +13,15 @@ export class DataService {
   constructor(public storage: Storage) {
     }
 
-    getData(): Promise<any>{
-    	return this.storage.get('');
+    getSavedSettings(): Promise<any>{
+    	return this.storage.get('settings');
+    }
+
+    saveSettings(settings: any[]): void {
+    	
+    	let stringifiedSettings = JSON.stringify(settings);
+
+		this.storage.set('settings', stringifiedSettings);
     }
 
 }

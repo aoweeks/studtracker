@@ -16,6 +16,8 @@ export class SettingsPage {
 
   constructor(public navCtrl: NavController, public settingsData: SettingsData) {}
 
-
+  ionViewWillLeave(): void{
+  	this.settingsData.saveData();
+  }
 
 }

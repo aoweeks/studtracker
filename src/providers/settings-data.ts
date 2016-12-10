@@ -70,20 +70,70 @@ export class SettingsData {
   /*----- ACCESSING STORAGE -------
   =================================*/
 
+  saveData() : void {
+    let settings: any = [];
+
+    settings.push({
+      name: "sound-on",
+      value: this.soundOn
+    });
+
+    settings.push({
+      name: "haptic-on",
+      value: this.hapticOn
+    });
+
+    settings.push({
+      name: "seven-mode-on",
+      value: this.sevenCardModeOn
+    });
+
+     settings.push({
+      name: "four-colour-on",
+      value: this.fourColourDeck
+    });
+
+     this.dataService.saveSettings(settings);
+  }
+
   loadData() : void {
-    this.platform.ready().then((settings) => {  
+    this.platform.ready().then(() => {  
 
-      this.dataService.getData().then((checklists) => {
+      this.dataService.getSavedSettings().then((settings) => {
 
+         let savedSettings: any = false;
 
+         if(typeof(settings) != "undefined"){
+           savedSettings = JSON.parse(settings);
+         }
+
+         console.log(savedSettings);
+
+         if(savedSettings){
+
+           savedSettings.forEach((savedSetting) => {
+              switch(savedSetting.name){
+                case "four-colour-on":
+                  console.log("IN Four COLOUrS");
+                  this.setDeckColours(savedSetting.value);
+                  break;
+                case "sound-on":
+                  this.setSoundOn(savedSetting.value);
+                  break;
+                case "haptic-on":
+                  this.setHapticOn(savedSetting.value);
+                  break;
+                case "seven-mode-on":
+                  this.setFiveOrSevenMode(savedSetting.value);
+                  break;
+              }
+
+           })
+         }
 
       });
 
     });
-  }
-
-  saveData(settings: any[]) : void {
-
   }
 
 }
