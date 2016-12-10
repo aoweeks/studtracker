@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Platform } from 'ionic-angular';
+import { StatusBar } from 'ionic-native';
 import { PlayerHandModel } from '../models/player-hand';
 import { DataService } from '../providers/data';
+
 
 /*
   Generated class for the SettingsData provider.
@@ -14,14 +16,16 @@ export class SettingsData {
 
   private fourColourDeck: boolean = true;
   private sevenCardModeOn: boolean = true;
-  private hapticOn: boolean = true;
-  private soundOn: boolean = true;
-  private statusBarOn: boolean = true;
+  public hapticOn: boolean = true;
+  public soundOn: boolean = true;
+  public statusBarOn: boolean = true;
 
   constructor(  private playerHand: PlayerHandModel,
                 private platform: Platform,
                 private dataService: DataService) {
 
+
+     StatusBar.backgroundColorByHexString("#7900B5");
   }
 
   /* ------ GETTERS AND SETTERS --------
@@ -161,7 +165,11 @@ export class SettingsData {
   ==================================*/
 
   showOrHideStatusBar() : void {
-
+    if(this.getStatusBarOn()) {
+      StatusBar.show();
+    } else {
+      StatusBar.hide();
+    }
   }
 
 }

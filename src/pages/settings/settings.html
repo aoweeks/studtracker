@@ -71,21 +71,19 @@
 
 		<ion-list radio-group no-lines>
 			
-			<ion-list-header>
-				Sound
-			</ion-list-header>
 
-			<ion-item>
-				<ion-label>On</ion-label>
-				<ion-radio [checked]="settingsData.getSoundOn()" (click)="settingsData.setSoundOn(true)"></ion-radio>
-			</ion-item>
+		<ion-item>
+		  <ion-label>Sound</ion-label>
+		  <ion-checkbox [(ngModel)]="settingsData.soundOn" ></ion-checkbox>
+		</ion-item>
 
-			<ion-item>
-				<ion-label>Off</ion-label>
-				<ion-radio [checked]="!settingsData.getSoundOn()" (click)="settingsData.setSoundOn(false)"></ion-radio>
-			</ion-item>
 
 		</ion-list>
+
+		<ion-item>
+		  <ion-label>Show Status Bar</ion-label>
+		  <ion-checkbox [(ngModel)]="settingsData.statusBarOn" ></ion-checkbox>
+		</ion-item>
 
 	</ion-list>
 
