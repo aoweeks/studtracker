@@ -16,12 +16,16 @@ export class SettingsData {
   private sevenCardModeOn: boolean = true;
   private hapticOn: boolean = true;
   private soundOn: boolean = true;
+  private statusBarOn: boolean = true;
 
   constructor(  private playerHand: PlayerHandModel,
                 private platform: Platform,
                 private dataService: DataService) {
 
   }
+
+  /* ------ GETTERS AND SETTERS --------
+  =======================================*/
 
   getDeckColours(): boolean{
   	return this.fourColourDeck;
@@ -66,6 +70,14 @@ export class SettingsData {
   }
 
 
+  getStatusBarOn(): boolean {
+    return this.statusBarOn;
+  }
+
+
+  setStatusBarOn(isBarOn: boolean): void {
+    this.statusBarOn = isBarOn;
+  }
 
   /*----- ACCESSING STORAGE -------
   =================================*/
@@ -93,6 +105,12 @@ export class SettingsData {
       value: this.fourColourDeck
     });
 
+    settings.push({
+      name: "status-bar-on",
+      value: this.statusBarOn
+    });
+
+
      this.dataService.saveSettings(settings);
   }
 
@@ -114,7 +132,6 @@ export class SettingsData {
            savedSettings.forEach((savedSetting) => {
               switch(savedSetting.name){
                 case "four-colour-on":
-                  console.log("IN Four COLOUrS");
                   this.setDeckColours(savedSetting.value);
                   break;
                 case "sound-on":
@@ -126,6 +143,9 @@ export class SettingsData {
                 case "seven-mode-on":
                   this.setFiveOrSevenMode(savedSetting.value);
                   break;
+                 case "status-bar-on":
+                   this.setStatusBarOn(savedSetting.value);
+                   break;
               }
 
            })
@@ -134,6 +154,14 @@ export class SettingsData {
       });
 
     });
+  }
+
+
+  /*------------- MISC --------------
+  ==================================*/
+
+  showOrHideStatusBar() : void {
+
   }
 
 }
