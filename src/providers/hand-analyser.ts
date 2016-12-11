@@ -18,12 +18,18 @@ export class HandAnalyser {
 	private endOfHandOdds: number[] = Array(22);
 	private analyzerWorker: Worker	= new Worker('');
 
+	private fiveOutOfSeven: number[][];
+
   constructor(public deck: DeckModel) {
+
+  	this.fiveOutOfSeven = this.getCombinations(5, 7);
   }
 
   analyseThisHand(hand: CardModel[]): string{
 
-  	let handRanking = this.findBestComboScore(hand);
+  	let combos: number[][] = this.getCombinations(5, hand.length);
+
+  	let handRanking = this.findBestComboScore(hand, combos);
 
   	return this.getHandRankName(handRanking);
 
@@ -56,9 +62,9 @@ export class HandAnalyser {
   	}
   }
 
-  findBestComboScore(hand: CardModel[]): number {
+  findBestComboScore(hand: CardModel[], combos: number[][]): number {
 
-  	let combos: number[][] = this.getCombinations(5, hand.length);
+  
   	let highestHandScore: number = -1;
 
   	for(let combo of combos){
@@ -169,7 +175,8 @@ export class HandAnalyser {
 
 	getCombinations(k,n): number[][] {
 		//console.log('called getcombinations' + ' ' + k + ' ' + n);
-		
+
+	
 		let result = [], comb = [];
 	    function next_comb(comb, k, n ,i = null) {
 	        if (comb.length === 0) {
@@ -213,10 +220,9 @@ export class HandAnalyser {
 		let newHand: CardModel[] = [];
 
 		let combos: number[][] = this.getCombinations(cardsToGo, remainingDeck.length);
+		let handCombos: number[][];
 		let endOfHandValues: number[] = [];
 
-
-		console.log("Made into potential values");
 
 			for(let i = 0; i < combos.length; i++){
 				newHand = currentHand.slice(0);
@@ -226,14 +232,18 @@ export class HandAnalyser {
 					newHand.push(nextCard);
 				}
 
-				endOfHandValues.push(this.findBestComboScore(newHand));
+				if(i == 0) handCombos = this.getCombinations(5, newHand.length);
+
+				endOfHandValues.push(this.findBestComboScore(newHand, handCombos));
 			}
 
 			for(let j = 0; j < remainingDeck.length; j++){
 				newHand = currentHand.slice(0);
 				newHand.push(remainingDeck[j]);
 
-				nextCardValues.push(this.findBestComboScore(newHand));
+				if(j == 0) handCombos = this.getCombinations(5, newHand.length);
+
+				nextCardValues.push(this.findBestComboScore(newHand, handCombos));
 
 			}
 
