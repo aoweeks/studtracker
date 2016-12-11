@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SettingsData } from '../../providers/settings-data';
+import { AboutPage } from '../about/about.ts';
 
 /*
   Generated class for the Settings page.
@@ -18,6 +19,10 @@ export class SettingsPage {
 
   ionViewWillLeave(): void{
   	this.settingsData.saveData();
+  }
+
+  openAboutPage(){
+  	this.navCtrl.push(AboutPage);
   }
 
 }

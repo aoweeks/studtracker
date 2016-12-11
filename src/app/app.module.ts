@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SettingsPage } from '../pages/settings/settings';
 import { StatsPage } from '../pages/stats/stats';
+import { AboutPage } from '../pages/about/about';
 import { SettingsData } from '../providers/settings-data';
 import { DataService } from '../providers/data';
 import { HandAnalyser } from '../providers/hand-analyser';
@@ -21,6 +22,7 @@ import { DoubleTapDirective } from '../directives/double-tap';
     HomePage,
     SettingsPage,
     StatsPage,
+    AboutPage,
     SafePipe,
     HandNavbarComponent,
     DoubleTapDirective
@@ -33,7 +35,8 @@ import { DoubleTapDirective } from '../directives/double-tap';
     MyApp,
     HomePage,
     SettingsPage,
-    StatsPage
+    StatsPage,
+    AboutPage
   ],
   providers: [forwardRef(() => DeckModel), PlayerHandModel, SettingsData, DataService,
               Storage, HandAnalyser, {provide: ErrorHandler, useClass: IonicErrorHandler}]
