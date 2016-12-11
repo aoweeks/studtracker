@@ -16,6 +16,7 @@ export class HandAnalyser {
 
 	private nextCardOdds: number[] = Array(22);
 	private endOfHandOdds: number[] = Array(22);
+	private analyzerWorker: Worker	= new Worker('');
 
   constructor(public deck: DeckModel) {
   }
