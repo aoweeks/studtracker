@@ -268,8 +268,8 @@ export class HandAnalyser {
 		
 
 
-		this.endOfHandOdds = [null, null, null, null, null, null, null, null, null, null, null, null, null,null, null, null, null, null, null, null, null];
-		this.nextCardOdds = [null, null, null, null, null, null, null, null, null, null, null, null, null,null, null, null, null, null, null, null, null]; 
+		this.endOfHandOdds = Array<number>(22);
+		this.nextCardOdds = Array<number>(22);
 	}
 
 
