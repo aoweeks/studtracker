@@ -5,8 +5,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": [
+      "webworker",
       "dom",
-      "es2015"
+      "es2015",
+      "scripthost"
     ],
     "module": "es2015",
     "moduleResolution": "node",

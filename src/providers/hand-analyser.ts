@@ -16,13 +16,14 @@ export class HandAnalyser {
 
 	private nextCardOdds: number[] = Array(22);
 	private endOfHandOdds: number[] = Array(22);
-	private analyzerWorker: Worker	= new Worker('');
+	private analyserWorker: Worker	= undefined;
 
 	private fiveOutOfSeven: number[][];
 
   constructor(public deck: DeckModel) {
 
   	this.fiveOutOfSeven = this.getCombinations(5, 7);
+  	this.analyserWorker = new Worker('../assets/workers/analyserWorker.js');
   }
 
   analyseThisHand(hand: CardModel[]): string{
@@ -214,63 +215,14 @@ export class HandAnalyser {
 
 	calculatePotentialHandValues(currentHand: CardModel[], cardsToGo: number): void {
 
-
-		let remainingDeck: CardModel[] = this.deck.getTheCardsInDeck();
-		let nextCardValues: number[] = [];
-		let newHand: CardModel[] = [];
-
-		let combos: number[][] = this.getCombinations(cardsToGo, remainingDeck.length);
-		let handCombos: number[][];
-		let endOfHandValues: number[] = [];
-
-
-			for(let i = 0; i < combos.length; i++){
-				newHand = currentHand.slice(0);
-				
-				for(let j = 0; j < combos[i].length; j++){
-					let nextCard: CardModel = remainingDeck[combos[i][j]];
-					newHand.push(nextCard);
-				}
-
-				if(i == 0) handCombos = this.getCombinations(5, newHand.length);
-
-				endOfHandValues.push(this.findBestComboScore(newHand, handCombos));
-			}
-
-			for(let j = 0; j < remainingDeck.length; j++){
-				newHand = currentHand.slice(0);
-				newHand.push(remainingDeck[j]);
-
-				if(j == 0) handCombos = this.getCombinations(5, newHand.length);
-
-				nextCardValues.push(this.findBestComboScore(newHand, handCombos));
-
-			}
-
-		this.endOfHandOdds = this.calculatePotentialHandOdds(endOfHandValues);
-		this.nextCardOdds = this.calculatePotentialHandOdds(nextCardValues); 
-	}
-
-
-
-	calculatePotentialHandOdds(potentialHandValues: number[]): number[] {
-
-		let tallyOfHandValues: number[] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-		let tallyOfOdds: number[] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-
-		for(let handValue of potentialHandValues){
-			//Increment the chances of this hand, but also all
-			//weaker hands as it's '% of making this hand (or better)'
-			for(let i = 0; i <= handValue; i++){
-				tallyOfHandValues[i]++;
-			}
-		}
-
-		for(let i = 0; i < 22; i++){
-			tallyOfOdds[i] = (tallyOfHandValues[i] / potentialHandValues.length) * 100;
-		}
-
-		return tallyOfOdds;
+		this.nextCardOdds = [101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101];
+		this.endOfHandOdds = [101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101];
+		let workerArguments = [currentHand, cardsToGo, this.deck.getTheCardsInDeck()];
+		this.analyserWorker.postMessage(workerArguments);
+		this.analyserWorker.onmessage = ev => {
+		    this.nextCardOdds = ev.data[0];
+		    this.endOfHandOdds = ev.data[1];
+		};
 
 	}
 

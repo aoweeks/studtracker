@@ -39,8 +39,4 @@ export class StatsPage {
 
   }
 
-  ionViewDidLoad(){
-  	console.log("LOADED");
-  }
-
 }

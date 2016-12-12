@@ -4,8 +4,8 @@ export class CardModel {
 	public status: string = "in-the-deck";
 	public face: string;
 
-	private suitPos: number;
-	private rankPos: number;
+	public suitPos: number;
+	public rankPos: number;
 
 	constructor(suitPos: number, rankPos: number, face: string){
 

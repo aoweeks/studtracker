@@ -15,7 +15,7 @@ import { AppVersion } from 'ionic-native';
 export class AboutPage {
 
 
-  private versionNumber = 'unknown';
+  public versionNumber = 'unknown';
 
   constructor(public navCtrl: NavController, private platform: Platform) {
 
