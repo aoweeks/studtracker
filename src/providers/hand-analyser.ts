@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { LoadingController } from 'ionic-angular';
 import { CardModel } from '../models/card';
 import { DeckModel } from '../models/deck';
 
@@ -14,13 +15,19 @@ export class HandAnalyser {
   	private cardNames: string[] = ["2", "3", "4", "5", "6", "7", "8", "9",
   					   	"10", "JACK", "QUEEN", "KING", "ACE"];
 
-	private nextCardOdds: number[] = Array(22);
-	private endOfHandOdds: number[] = Array(22);
+	private nextCardOdds: any[] = Array(22);
+	private endOfHandOdds: any[] = Array(22);
 	private analyserWorker: Worker	= undefined;
 
 	private fiveOutOfSeven: number[][];
+	private loader = this.loadingCtrl.create({
+						content: "<div class='loader-div' >Calculating</div>" //`{{ Calculating
+							// 			<button (click)='console.log("clicked"'>X</button> | safe }}`
+						});
+	public stillLoading = true;
 
-  constructor(public deck: DeckModel) {
+  constructor(	public deck: DeckModel,
+  			 	private loadingCtrl: LoadingController) {
 
   	this.fiveOutOfSeven = this.getCombinations(5, 7);
   	this.analyserWorker = new Worker('../assets/workers/analyserWorker.js');
@@ -175,7 +182,6 @@ export class HandAnalyser {
 
 
 	getCombinations(k,n): number[][] {
-		//console.log('called getcombinations' + ' ' + k + ' ' + n);
 
 	
 		let result = [], comb = [];
@@ -215,23 +221,39 @@ export class HandAnalyser {
 
 	calculatePotentialHandValues(currentHand: CardModel[], cardsToGo: number): void {
 
-		this.nextCardOdds = [101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101];
-		this.endOfHandOdds = [101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101,101];
+		this.nextCardOdds = Array(22);
+		this.endOfHandOdds = Array(22);
+		this.stillLoading = true;
+
 		let workerArguments = [currentHand, cardsToGo, this.deck.getTheCardsInDeck()];
+
+		if(this.analyserWorker) this.analyserWorker.terminate();
+		this.analyserWorker = new Worker('../assets/workers/analyserWorker.js');
 		this.analyserWorker.postMessage(workerArguments);
+
+
+
+		this.loader.present();
+
 		this.analyserWorker.onmessage = ev => {
 		    this.nextCardOdds = ev.data[0];
 		    this.endOfHandOdds = ev.data[1];
+		    this.stillLoading = false;
+		    this.loader.dismiss();
 		};
 
 	}
 
-	calculateFullHandOdds(currentHand: CardModel[]){
+	calculateFullHandOdds(currentHand: CardModel[]): void{
 		
 
 
 		this.endOfHandOdds = Array<number>(22);
 		this.nextCardOdds = Array<number>(22);
+	}
+
+	getStillLoading(): boolean {
+		return this.stillLoading;
 	}
 
 
@@ -243,5 +265,9 @@ export class HandAnalyser {
 
 	getEndOfHandOdds(whichHand: number): number{
 		return this.endOfHandOdds[whichHand];
+	}
+
+	ionViewWillLeave(){
+		if(this.analyserWorker) this.analyserWorker.terminate();
 	}
 }

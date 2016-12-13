@@ -46,7 +46,8 @@
 		<ion-row *ngFor="let rowNumber of handRows" class="hand-row"
 				 [ngClass]="{
 				 				cardsRemaining : numberOfCardsRemaining != 0,
-				 				noCardsRemaining : numberOfCardsRemaining == 0
+				 				noCardsRemaining : numberOfCardsRemaining == 0,
+				 				stillLoading : analyser.stillLoading
 				 			}">
 			<ion-col class="hand-type">
 				{{ handRanks[rowNumber] }}:

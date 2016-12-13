@@ -72,6 +72,13 @@ page-stats {
 
 	}
 
+	.stillLoading{
+		.odds-text:after{
+			content: "?";
+			font-size: $base-font-size;
+		}
+	}
+
 
 	h3{
 		font-size: 3.5vw;
