@@ -39,10 +39,6 @@ export class HomePage {
   	this.navCtrl.push(SettingsPage);
   }
 
-  openStatsPage(): void {
-  	this.navCtrl.push(StatsPage);
-  }
-
   onDoubleTap(e: Event, suitPos: number, rankPos: number): void{
   	this.deck.toggleCardInPlayerHand(suitPos, rankPos);
   }

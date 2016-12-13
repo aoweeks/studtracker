@@ -5,13 +5,15 @@
   for more info on Angular 2 Components.
 -->
 
-<ion-title start>
-  YOUR HAND:
+<ion-title start >
+    <a id="stats-link" (click)="openStatsPage()">
+	  YOUR HAND:
 
-    <span class="navbar-hand" *ngFor="let playerCard of getPlayerHandFaces()"
-    	[ngClass]="{twoColourDeck : settingsData.fourColourDeck != true}"
-    	[innerHtml]="playerCard | safe">
-    </span>
-    {{ analyser.analyseThisHand( playerHand.getHand() ) }}
-
+	    <span class="navbar-hand" *ngFor="let playerCard of getPlayerHandFaces()"
+	    	[ngClass]="{twoColourDeck : settingsData.fourColourDeck != true}"
+	    	[innerHtml]="playerCard | safe">
+	    </span>
+	    &nbsp;
+	    {{ analyser.analyseThisHand( playerHand.getHand() ) }}
+	</a>
 </ion-title>

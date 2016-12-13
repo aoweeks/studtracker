@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { PlayerHandModel } from '../../models/player-hand';
 import { SettingsData } from '../../providers/settings-data';
 import { HandAnalyser } from '../../providers/hand-analyser';
+import { StatsPage } from '../../pages/stats/stats';
+import { NavController } from 'ionic-angular';
 
 /*
   Generated class for the HandNavbar component.
@@ -27,7 +29,8 @@ export class HandNavbarComponent {
 
   constructor(  public playerHand: PlayerHandModel,
                 private settingsData: SettingsData,
-                public analyser: HandAnalyser) {
+                public analyser: HandAnalyser,
+                private navCtrl: NavController) {
   }
 
 
@@ -43,6 +46,12 @@ export class HandNavbarComponent {
     }
 
     return playerHandFaces;
+  }
+
+
+  
+  openStatsPage(): void {
+    this.navCtrl.push(StatsPage);
   }
 
 }
