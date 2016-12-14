@@ -18,27 +18,29 @@
 
 
 	<ion-grid>
-		<ion-row class="hand-row">
-			<h3>ODDS OF MAKING HAND (OR BETTER):</h3>
+		<ion-row class="hand-row title-row">
+			<ion-col>
+				<h3>ODDS OF MAKING HAND (OR BETTER)</h3>
+			</ion-col>
 		</ion-row>
 
 		<ion-row class="hand-row info-row">
 			<ion-col class="hand-type">
 			</ion-col>
-			<ion-col class="next-card-odds title-cell">
+			<ion-col class="card-hand-odds title-cell">
 				NEXT CARD
 			</ion-col>
-			<ion-col class="next-card-odds title-cell">
+			<ion-col class="card-hand-odds title-cell">
 				END OF HAND
 			</ion-col>
 			<ion-col class="spacer">
 			</ion-col>	
 			<ion-col class="hand-type">
 			</ion-col>
-			<ion-col class="next-card-odds title-cell">
+			<ion-col class="card-hand-odds title-cell">
 				NEXT CARD
 			</ion-col>
-			<ion-col class="next-card-odds title-cell">
+			<ion-col class="card-hand-odds title-cell">
 				END OF HAND
 			</ion-col>
 		</ion-row>
@@ -52,10 +54,10 @@
 			<ion-col class="hand-type">
 				{{ handRanks[rowNumber] }}:
 			</ion-col>
-			<ion-col class="next-card-odds">
+			<ion-col class="card-hand-odds">
 				<span class="odds-text">{{ analyser.getNextCardOdds(rowNumber + 14) | number: '1.0-2' }}</span>
 			</ion-col>
-			<ion-col class="next-card-odds">
+			<ion-col class="card-hand-odds">
 				<span class="odds-text">{{ analyser.getEndOfHandOdds(rowNumber + 14) | number: '1.0-2' }}</span>
 			</ion-col>
 			<ion-col class="spacer">
@@ -63,10 +65,10 @@
 			<ion-col class="hand-type">
 				{{ handRanks[rowNumber + 1] }}:
 			</ion-col>
-			<ion-col class="next-card-odds">
+			<ion-col class="card-hand-odds">
 				<span class="odds-text">{{ analyser.getNextCardOdds(rowNumber + 14 + 1) | number: '1.0-2' }}</span>
 			</ion-col>
-			<ion-col class="next-card-odds">
+			<ion-col class="card-hand-odds">
 				<span class="odds-text">{{ analyser.getEndOfHandOdds(rowNumber + 14 + 1) | number: '1.0-2' }}</span>
 			</ion-col>
 		</ion-row>

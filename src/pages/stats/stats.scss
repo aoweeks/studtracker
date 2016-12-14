@@ -10,26 +10,24 @@ page-stats {
 
 	}
 
-
+	.title-row{
+		text-align: center;
+	}
 
 	.hand-row{
 		font-size: $base-font-size;
 		padding-left: 1vw;
 		padding-right: 1vw;
 		flex: 1;
+		align-items: center;
 
 
 
 		.hand-type{
-			flex: 30;
+			flex: 25;
 		}
 
-		.next-card-odds{
-			flex: 10;
-			text-align: center;
-		}
-
-		.end-of-hand-odds{
+		.card-hand-odds{
 			flex: 10;
 			text-align: center;
 		}
@@ -48,7 +46,6 @@ page-stats {
 
 	.info-row{
 		flex: 0 0 $base-font-size;
-		align-items: $base-font-size;
 
 
 
