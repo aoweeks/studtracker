@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { LoadingController } from 'ionic-angular';
+import { DomSanitizer } from '@angular/platform-browser';
 import { CardModel } from '../models/card';
 import { DeckModel } from '../models/deck';
+import { SafePipe } from '../pipes/safe';
 
 /*
-  Generated class for the HandAnalyzer provider.
-
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular 2 DI.
+  TODO: separate next card, end of hand functions
 */
 @Injectable()
 export class HandAnalyser {
@@ -21,14 +20,13 @@ export class HandAnalyser {
 	private workerRunning: boolean = false;
 
 	private fiveOutOfSeven: number[][];
-	private loader = this.loadingCtrl.create({
-						content: "<div id='loaderDiv'>CALCULATING POTENTIAL HAND ODDS</div>" //`{{ Calculating
-							// 			<button (click)='console.log("clicked"'>X</button> | safe }}`
-						});
-	public stillLoading = true;
+	private loader;
+
+	public stillLoading: boolean = true;
 
   constructor(	public deck: DeckModel,
-  			 	private loadingCtrl: LoadingController) {
+  			 	private loadingCtrl: LoadingController,
+  			 	private sanitizer: DomSanitizer) {
 
   	this.fiveOutOfSeven = this.getCombinations(5, 7);
   	this.analyserWorker = new Worker('../assets/workers/analyserWorker.js');
@@ -228,15 +226,16 @@ export class HandAnalyser {
 
 		let workerArguments = [currentHand, cardsToGo, this.deck.getTheCardsInDeck()];
 
+
 		if(this.workerRunning) this.analyserWorker.terminate();
 		this.analyserWorker = new Worker('../assets/workers/analyserWorker.js');
 		this.workerRunning = true;
 
 		this.analyserWorker.postMessage(workerArguments);
 
+		// NOTE TO ME, LOOK INTO USING PIPES IN FUNCTIONS
 		this.loader = this.loadingCtrl.create({
-						content: "<div id='loaderDiv'>CALCULATING POTENTIAL HAND ODDS</div>" //`{{ Calculating
-							// 			<button (click)='console.log("clicked"'>X</button> | safe }}`
+							content: this.getLoaderHTML()
 						});
 		this.loader.present();
 
@@ -244,7 +243,7 @@ export class HandAnalyser {
 		    this.nextCardOdds = ev.data[0];
 		    this.endOfHandOdds = ev.data[1];
 		    this.stillLoading = false;
-		    
+
 		    this.loader.dismiss();
 		    this.analyserWorker.terminate();
 		    this.workerRunning = false;
@@ -273,6 +272,13 @@ export class HandAnalyser {
 
 	getEndOfHandOdds(whichHand: number): number{
 		return this.endOfHandOdds[whichHand];
+	}
+
+
+	getLoaderHTML(): any {
+		return this.sanitizer.bypassSecurityTrustHtml(`<div id='loaderDiv'>CALCULATING POTENTIAL HAND ODDS
+		 			<button (click)='console.log("clicked"'>YES</button>
+				</div>`);
 	}
 
 	ionViewWillLeave(){

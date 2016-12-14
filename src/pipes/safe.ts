@@ -4,9 +4,11 @@ import { DomSanitizer} from '@angular/platform-browser';
 
 @Pipe({name: 'safe'})
 export class SafePipe {
-  constructor(private sanitizer: DomSanitizer){}
+  constructor(public sanitizer: DomSanitizer){}
 
   transform(html) {
     return this.sanitizer.bypassSecurityTrustHtml(html);
   }
+
+
 }
