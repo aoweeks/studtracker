@@ -5,6 +5,7 @@ import { CardModel } from '../models/card';
 import { DeckModel } from '../models/deck';
 import { SafePipe } from '../pipes/safe';
 
+
 /*
   TODO: separate next card, end of hand functions
 */
@@ -235,7 +236,9 @@ export class HandAnalyser {
 
 		// NOTE TO ME, LOOK INTO USING PIPES IN FUNCTIONS
 		this.loader = this.loadingCtrl.create({
-							content: this.getLoaderHTML()
+							content: this.getLoaderHTML(),
+							cssClass: this.getLoaderCSS(),
+							showBackdrop: false
 						});
 		this.loader.present();
 
@@ -275,11 +278,28 @@ export class HandAnalyser {
 	}
 
 
+
+	/*--------------- LOADER STUFF -------------
+	============================================*/
+
+
 	getLoaderHTML(): any {
 		return this.sanitizer.bypassSecurityTrustHtml(`<div id='loaderDiv'>CALCULATING POTENTIAL HAND ODDS
-		 			<button (click)='console.log("clicked"'>YES</button>
+		 			<button (click)='console.log("hello")'>YES</button>
+		 			<script>console.log("howdy")</script>
 				</div>`);
 	}
+
+	getLoaderCSS(): string{
+		return "";
+	}
+
+
+	cancelLoading(){
+	}
+
+
+
 
 	ionViewWillLeave(){
 		if(this.workerRunning){
