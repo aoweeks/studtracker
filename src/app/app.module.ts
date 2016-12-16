@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { SettingsPage } from '../pages/settings/settings';
 import { StatsPage } from '../pages/stats/stats';
 import { AboutPage } from '../pages/about/about';
+import { AdvertPage } from '../pages/advert/advert';
 import { SettingsData } from '../providers/settings-data';
 import { DataService } from '../providers/data';
 import { HandAnalyser } from '../providers/hand-analyser';
@@ -23,6 +24,7 @@ import { DoubleTapDirective } from '../directives/double-tap';
     SettingsPage,
     StatsPage,
     AboutPage,
+    AdvertPage,
     SafePipe,
     HandNavbarComponent,
     DoubleTapDirective
@@ -36,7 +38,8 @@ import { DoubleTapDirective } from '../directives/double-tap';
     HomePage,
     SettingsPage,
     StatsPage,
-    AboutPage
+    AboutPage,
+    AdvertPage
   ],
   providers: [forwardRef(() => DeckModel), PlayerHandModel, SettingsData, DataService,
               Storage, HandAnalyser, {provide: ErrorHandler, useClass: IonicErrorHandler}]

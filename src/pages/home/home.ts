@@ -6,6 +6,8 @@ import { SettingsPage } from '../settings/settings';
 
 import { StatsPage } from '../stats/stats';
 
+import { AdvertPage } from '../advert/advert';
+
 import { SettingsData } from '../../providers/settings-data';
 
 import { DeckModel } from '../../models/deck';
@@ -45,11 +47,16 @@ export class HomePage {
   }
 
   resetDeck(): void{
-  	this.deck.resetDeck();
+  	if(this.deck.getTotalCardsInDeck() < 52){
+	  	this.deck.resetDeck();
 
-  	this.resetCount++;
-  	if(this.resetCount > 4){
-  		
+	  	this.resetCount++;
+	  	if(this.resetCount > 4){
+	  		if(Math.random() > 0.5){
+	  			this.resetCount = 0;
+	  			this.navCtrl.push(AdvertPage);
+	  		}
+	  	}
   	}
   }
  
