@@ -21,7 +21,8 @@ export class HomePage {
 
   public suits: string[] = ["s", "h", "c", "d"];
   public ranks: string[] = ["2", "3", "4", "5", "6", "7", "8", "9", "10",
-  					  "J", "Q", "K", "A"];
+							  "J", "Q", "K", "A"];
+  public resetCount: number = 0;
 
 
   constructor(	public navCtrl: NavController,
@@ -43,7 +44,14 @@ export class HomePage {
   	this.deck.toggleCardInPlayerHand(suitPos, rankPos);
   }
 
+  resetDeck(): void{
+  	this.deck.resetDeck();
 
+  	this.resetCount++;
+  	if(this.resetCount > 4){
+  		
+  	}
+  }
  
 
 }
