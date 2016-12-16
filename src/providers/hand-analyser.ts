@@ -256,8 +256,6 @@ export class HandAnalyser {
 
 	calculateFullHandOdds(currentHand: CardModel[]): void{
 		
-
-
 		this.endOfHandOdds = Array<number>(22);
 		this.nextCardOdds = Array<number>(22);
 	}
@@ -284,9 +282,10 @@ export class HandAnalyser {
 
 
 	getLoaderHTML(): any {
-		return this.sanitizer.bypassSecurityTrustHtml(`<div id='loaderDiv'>CALCULATING POTENTIAL HAND ODDS
-		 			<button (click)='console.log("hello")'>YES</button>
-		 			<script>console.log("howdy")</script>
+		return this.sanitizer.bypassSecurityTrustHtml(
+				`<div id='loaderDiv'>CALCULATING POTENTIAL HAND ODDS
+		 			<button onclick="console.log(this)">YES</button>
+		 			<script>console.log("howdy");</script>
 				</div>`);
 	}
 

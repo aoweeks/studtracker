@@ -51,6 +51,7 @@ export class HandNavbarComponent {
 
   
   openStatsPage(): void {
+    console.log(this);
     this.navCtrl.push(StatsPage);
   }
 
