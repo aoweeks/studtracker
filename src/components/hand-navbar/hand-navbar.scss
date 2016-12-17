@@ -1,20 +1,29 @@
 hand-navbar {
 
+	$title-size: 35px;
+	
+	align-items: center;
+
+
 	//NAVBAR CARD STUFF
 	.navbar-hand{
 		display: inline-block;
+		align-items:center;
+		line-height: $title-size;
 
 		.stud-card{
-			height: 35px;
+			height: $title-size;
 			width: auto;
 			margin-left: 5px;
 		}
 
 	}
 
-	ion-title{
-		//line-height: 20px;
-		//font-size: 20px !important;
+	.hand-text{
+
+
+		line-height: $title-size;
+		font-size: $title-size;
 	}
 
 	#stats-link{

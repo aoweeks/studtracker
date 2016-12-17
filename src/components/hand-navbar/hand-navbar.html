@@ -7,13 +7,13 @@
 
 <ion-title start >
     <a id="stats-link" (click)="openStatsPage()">
-	  YOUR HAND:
+	    <span class="hand-text">YOUR HAND:</span>
 
 	    <span class="navbar-hand" *ngFor="let playerCard of getPlayerHandFaces()"
 	    	[ngClass]="{twoColourDeck : settingsData.fourColourDeck != true}"
 	    	[innerHtml]="playerCard | safe">
 	    </span>
 	    &nbsp;
-	    {{ analyser.analyseThisHand( playerHand.getHand() ) }}
+	    <span class="hand-text">{{ analyser.analyseThisHand( playerHand.getHand() ) }}</span>
 	</a>
 </ion-title>

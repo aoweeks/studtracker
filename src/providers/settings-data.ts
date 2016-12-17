@@ -48,11 +48,15 @@ export class SettingsData {
 
   setFiveOrSevenMode(isSevenMode: boolean): void {
     
-    if(isSevenMode == false) this.playerHand.trimToFive();
+    if(isSevenMode == false){
+      // while(this.playerHand.getHandSize() > 5){
+      //       this.deck.toggleCardInPlayerHand(this.playerHand[5].getSuit(), this.playerHand[5].getRank(), false);
+      //   }
+    }
 
     this.sevenCardModeOn = isSevenMode;
   }
-
+    
 
 
   getHapticOn(): boolean {

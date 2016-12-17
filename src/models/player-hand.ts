@@ -58,12 +58,6 @@ export class PlayerHandModel {
 		this.hand = [];
 	}
 
-	public trimToFive(): void {
-		while(this.hand.length > 5){
-			//this.deck.toggleCardInPlayerHand(this.hand[5].getSuit(), this.hand[5].getRank(), false);
-		}
-	}
-
 	private sortHand(): void {
 
 	}
