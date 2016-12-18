@@ -47,6 +47,12 @@ page-home {
 
 	/*   --- CARD STUFF ---
 	===========================*/
+	
+	.stud-card{
+		display: block;
+		max-height: 20vh;
+		width: auto;
+	}
 
 	//Apply transition to every element in the card
 	.stud-card * {
