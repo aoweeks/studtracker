@@ -4,11 +4,12 @@ hand-navbar {
 	
 	align-items: center;
 
+	justify-content: left;
+	margin-left: 1vw;
 
 	//NAVBAR CARD STUFF
 	.navbar-hand{
 		display: inline-block;
-		align-items:center;
 		line-height: $title-size;
 
 		.stud-card{
