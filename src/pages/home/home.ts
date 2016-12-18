@@ -56,13 +56,15 @@ export class HomePage {
 	  	if(this.resetCount > 4){
 	  		if(Math.random() > 0.5){
 	  			this.resetCount = 0;
-	  			this.navCtrl.push(AdvertPage);
+	  			this.showInterstitialAd();
 	  		}
 	  	}
   	}
   }
 
   showInterstitialAd() : void {
+
+  	console.log("Ad should be firing: " + AdMob);
   	if (AdMob) AdMob.showInterstitial();
 
   }

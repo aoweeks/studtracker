@@ -26,6 +26,7 @@ export class SettingsData {
 
 
      StatusBar.backgroundColorByHexString("#7900B5");
+     this.showOrHideStatusBar();
   }
 
   /* ------ GETTERS AND SETTERS --------
@@ -85,6 +86,7 @@ export class SettingsData {
 
   setStatusBarOn(isBarOn: boolean): void {
     this.statusBarOn = isBarOn;
+    this.showOrHideStatusBar();
   }
 
   /*----- ACCESSING STORAGE -------
