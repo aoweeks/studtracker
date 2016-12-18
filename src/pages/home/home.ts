@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
+import { AdMob } from 'ionic-native';
+
 import { SettingsPage } from '../settings/settings';
 
 import { StatsPage } from '../stats/stats';
@@ -34,19 +36,19 @@ export class HomePage {
 
   }
 
-  ionViewDidLoad(): void {
+  ionViewDidLoad() : void {
   	this.settingsData.loadData();
   }
 
-  openSettingsPage(): void {
+  openSettingsPage() : void {
   	this.navCtrl.push(SettingsPage);
   }
 
-  onDoubleTap(e: Event, suitPos: number, rankPos: number): void{
+  onDoubleTap(e: Event, suitPos: number, rankPos: number) : void{
   	this.deck.toggleCardInPlayerHand(suitPos, rankPos);
   }
 
-  resetDeck(): void{
+  resetDeck() : void{
   	if(this.deck.getTotalCardsInDeck() < 52){
 	  	this.deck.resetDeck();
 
@@ -58,6 +60,11 @@ export class HomePage {
 	  		}
 	  	}
   	}
+  }
+
+  showInterstitialAd() : void {
+  	if (AdMob) AdMob.showInterstitial();
+
   }
  
 

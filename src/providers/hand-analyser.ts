@@ -234,7 +234,6 @@ export class HandAnalyser {
 
 		this.analyserWorker.postMessage(workerArguments);
 
-		// NOTE TO ME, LOOK INTO USING PIPES IN FUNCTIONS
 		this.loader = this.loadingCtrl.create({
 							content: this.getLoaderHTML(),
 							cssClass: this.getLoaderCSS(),
@@ -284,12 +283,11 @@ export class HandAnalyser {
 	getLoaderHTML(): any {
 		return this.sanitizer.bypassSecurityTrustHtml(
 				`<div id='loaderDiv'>CALCULATING POTENTIAL HAND ODDS
-		 			<button onclick="console.log(this)">YES</button>
-		 			<script>console.log("howdy");</script>
+		 			<button onclick="console.log(` + this.stillLoading + `)">YES</button>
 				</div>`);
 	}
 
-	getLoaderCSS(): string{
+	getLoaderCSS(): string {
 		return "";
 	}
 
