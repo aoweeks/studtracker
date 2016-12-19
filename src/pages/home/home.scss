@@ -12,7 +12,9 @@ page-home {
 	.card-grid{
 		display: flex;
 		flex-direction: column;
-		height: 98%;
+		height: 100%;
+		width: 101%;
+		overflow: hidden;
 	}
 
 
@@ -156,6 +158,11 @@ page-home {
 		text-align: center;
 		margin: none;
 		padding: none;
+	}
+
+
+	.rank-odds-text{
+		transform: translate(0, -1vh);
 	}
 	
 	.rank-odds-text:after{
