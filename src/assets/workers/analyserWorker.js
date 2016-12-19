@@ -149,45 +149,52 @@ function getCombinations(k,n) {
 }
 
 
-function calculatePotentialHandValues(currentHand, cardsToGo, remainingDeck) {
+function calculateNextCardValues(currentHand, remainingDeck) {
 
 
+
+	let newHand = [];
+
+	let handCombos = getCombinations(5, currentHand.length + 1);
 	let nextCardValues = [];
+
+
+	for(let i = 0; i < remainingDeck.length; i++){
+		newHand = currentHand.slice(0);
+		newHand.push(remainingDeck[i]);
+		nextCardValues.push(findBestComboScore(newHand, handCombos));
+
+	}
+
+	return ( calculatePotentialHandOdds(nextCardValues) );
+}
+
+
+function calculateEndOfHandValues(currentHand, remainingDeck, cardsToGo) {
+
+
 	let newHand = [];
 
 	let combos = getCombinations(cardsToGo, remainingDeck.length);
-	let handCombos;
+	let handCombos = getCombinations(5, currentHand.length + cardsToGo);
 	let endOfHandValues = [];
 
 
-		for(let i = 0; i < combos.length; i++){
-			newHand = currentHand.slice(0);
-			
-			for(let j = 0; j < combos[i].length; j++){
-				let nextCard = remainingDeck[combos[i][j]];
-				newHand.push(nextCard);
-			}
-
-			if(i == 0) handCombos = getCombinations(5, newHand.length);
-
-			endOfHandValues.push(findBestComboScore(newHand, handCombos));
+	for(let i = 0; i < combos.length; i++){
+		newHand = currentHand.slice(0);
+		
+		for(let j = 0; j < combos[i].length; j++){
+			let nextCard = remainingDeck[combos[i][j]];
+			newHand.push(nextCard);
 		}
 
-		for(let j = 0; j < remainingDeck.length; j++){
-			newHand = currentHand.slice(0);
-			newHand.push(remainingDeck[j]);
 
-			if(j == 0) handCombos = getCombinations(5, newHand.length);
+		endOfHandValues.push(findBestComboScore(newHand, handCombos));
+	}
 
-			nextCardValues.push(findBestComboScore(newHand, handCombos));
-
-		}
-
-	let odds = [];
-	odds.push(calculatePotentialHandOdds(nextCardValues));
-	odds.push(calculatePotentialHandOdds(endOfHandValues));
-	postMessage(odds);
+	return ( calculatePotentialHandOdds(endOfHandValues) );
 }
+
 
 
 
@@ -215,10 +222,17 @@ function calculatePotentialHandOdds(potentialHandValues) {
 
 self.onmessage = args => {
     let currentHand = args.data[0];
-    let cardsToGo = args.data[1];
-    let remainingDeck = args.data[2];
+    let remainingDeck = args.data[1];
 
-    calculatePotentialHandValues(currentHand, cardsToGo, remainingDeck);
-	
+
+    //Determine whether this worker is calculating next card or end of hand, based on number of args
+    if(args.data.length == 2){
+    	postMessage( calculateNextCardValues(currentHand, remainingDeck) );
+
+    } else{
+	    let cardsToGo = args.data[2];
+
+	    postMessage( calculateEndOfHandValues(currentHand, remainingDeck, cardsToGo) );
+	}
 
 }

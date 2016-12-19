@@ -48,17 +48,18 @@
 		<ion-row *ngFor="let rowNumber of handRows" class="hand-row"
 				 [ngClass]="{
 				 				cardsRemaining : numberOfCardsRemaining != 0,
-				 				noCardsRemaining : numberOfCardsRemaining == 0,
-				 				stillLoading : analyser.stillLoading
+				 				noCardsRemaining : numberOfCardsRemaining == 0
 				 			}">
 			<ion-col class="hand-type">
 				{{ handRanks[rowNumber] }}:
 			</ion-col>
 			<ion-col class="card-hand-odds">
-				<span class="odds-text">{{ analyser.getNextCardOdds(rowNumber + 14) | number: '1.0-2' }}</span>
+				<ion-spinner *ngIf="analyser.getNextCardOdds(rowNumber + 14) == null && numberOfCardsRemaining != 0"></ion-spinner>
+				<span class="odds-text" *ngIf="analyser.getNextCardOdds(0) || numberOfCardsRemaining == 0">{{ analyser.getNextCardOdds(rowNumber + 14) | number: '1.0-2' }}</span>
 			</ion-col>
 			<ion-col class="card-hand-odds">
-				<span class="odds-text">{{ analyser.getEndOfHandOdds(rowNumber + 14) | number: '1.0-2' }}</span>
+				<ion-spinner *ngIf="analyser.getEndOfHandOdds(rowNumber + 14) == null && numberOfCardsRemaining != 0"></ion-spinner>
+				<span class="odds-text" *ngIf="analyser.getEndOfHandOdds(0) || numberOfCardsRemaining == 0">{{ analyser.getEndOfHandOdds(rowNumber + 14) | number: '1.0-2' }}</span>
 			</ion-col>
 			<ion-col class="spacer">
 			</ion-col>	
@@ -66,10 +67,12 @@
 				{{ handRanks[rowNumber + 1] }}:
 			</ion-col>
 			<ion-col class="card-hand-odds">
-				<span class="odds-text">{{ analyser.getNextCardOdds(rowNumber + 14 + 1) | number: '1.0-2' }}</span>
+				<ion-spinner *ngIf="analyser.getNextCardOdds(rowNumber + 14 + 1) == null && numberOfCardsRemaining != 0"></ion-spinner>
+				<span class="odds-text" *ngIf="analyser.getNextCardOdds(0) || numberOfCardsRemaining == 0">{{ analyser.getNextCardOdds(rowNumber + 14 + 1) | number: '1.0-2' }}</span>
 			</ion-col>
 			<ion-col class="card-hand-odds">
-				<span class="odds-text">{{ analyser.getEndOfHandOdds(rowNumber + 14 + 1) | number: '1.0-2' }}</span>
+				<ion-spinner *ngIf="analyser.getEndOfHandOdds(rowNumber + 14 + 1) == null && numberOfCardsRemaining != 0"></ion-spinner>
+				<span class="odds-text" *ngIf="analyser.getEndOfHandOdds(0) || numberOfCardsRemaining == 0">{{ analyser.getEndOfHandOdds(rowNumber + 14 + 1) | number: '1.0-2' }}</span>
 			</ion-col>
 		</ion-row>
 

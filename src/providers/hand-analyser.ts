@@ -17,11 +17,11 @@ export class HandAnalyser {
 
 	private nextCardOdds: any[] = Array(22);
 	private endOfHandOdds: any[] = Array(22);
-	private analyserWorker: Worker	= undefined;
-	private workerRunning: boolean = false;
+	private nextCardWorker: Worker	= undefined;
+	private endOfHandWorker: Worker = undefined;
+	private workersRunning: boolean = false;
 
 	private fiveOutOfSeven: number[][];
-	private loader;
 
 	public stillLoading: boolean = true;
 
@@ -30,7 +30,6 @@ export class HandAnalyser {
   			 	private sanitizer: DomSanitizer) {
 
   	this.fiveOutOfSeven = this.getCombinations(5, 7);
-  	this.analyserWorker = new Worker('../assets/workers/analyserWorker.js');
   }
 
   analyseThisHand(hand: CardModel[]): string{
@@ -223,32 +222,27 @@ export class HandAnalyser {
 
 		this.nextCardOdds = Array(22);
 		this.endOfHandOdds = Array(22);
-		this.stillLoading = true;
 
-		let workerArguments = [currentHand, cardsToGo, this.deck.getTheCardsInDeck()];
+		if(this.workersRunning) this.nextCardWorker.terminate();
+		this.nextCardWorker = new Worker('../assets/workers/analyserWorker.js');
+		this.endOfHandWorker = new Worker('../assets/workers/analyserWorker.js');
+		this.workersRunning = true;
 
+		this.nextCardWorker.postMessage( [ currentHand, this.deck.getTheCardsInDeck() ] );
+		this.endOfHandWorker.postMessage( [ currentHand, this.deck.getTheCardsInDeck(), cardsToGo ]);
 
-		if(this.workerRunning) this.analyserWorker.terminate();
-		this.analyserWorker = new Worker('../assets/workers/analyserWorker.js');
-		this.workerRunning = true;
+		this.nextCardWorker.onmessage = ev => {
+		    this.nextCardOdds = ev.data;
+		    
+		    this.nextCardWorker.terminate();
+		    this.workersRunning = false;
+		};
 
-		this.analyserWorker.postMessage(workerArguments);
+		this.endOfHandWorker.onmessage = ev => {
+		    this.endOfHandOdds = ev.data;
 
-		this.loader = this.loadingCtrl.create({
-							content: this.getLoaderHTML(),
-							cssClass: this.getLoaderCSS(),
-							showBackdrop: false
-						});
-		this.loader.present();
-
-		this.analyserWorker.onmessage = ev => {
-		    this.nextCardOdds = ev.data[0];
-		    this.endOfHandOdds = ev.data[1];
-		    this.stillLoading = false;
-
-		    this.loader.dismiss();
-		    this.analyserWorker.terminate();
-		    this.workerRunning = false;
+		    this.endOfHandWorker.terminate();
+		    this.workersRunning = false;
 		};
 
 	}
@@ -257,10 +251,6 @@ export class HandAnalyser {
 		
 		this.endOfHandOdds = Array<number>(22);
 		this.nextCardOdds = Array<number>(22);
-	}
-
-	getStillLoading(): boolean {
-		return this.stillLoading;
 	}
 
 
@@ -276,32 +266,15 @@ export class HandAnalyser {
 
 
 
-	/*--------------- LOADER STUFF -------------
-	============================================*/
 
-
-	getLoaderHTML(): any {
-		return this.sanitizer.bypassSecurityTrustHtml(
-				`<div id='loaderDiv'>CALCULATING POTENTIAL HAND ODDS
-		 			<button onclick="console.log(` + this.stillLoading + `)">YES</button>
-				</div>`);
-	}
-
-	getLoaderCSS(): string {
-		return "";
-	}
-
-
-	cancelLoading(){
-	}
 
 
 
 
 	ionViewWillLeave(){
-		if(this.workerRunning){
-			this.analyserWorker.terminate();
-			this.workerRunning = false;
+		if(this.workersRunning){
+			this.nextCardWorker.terminate();
+			this.workersRunning = false;
 		}
 	}
 }
