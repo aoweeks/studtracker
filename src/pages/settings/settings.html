@@ -21,12 +21,12 @@
 				Deck Style
 			</ion-list-header>
 
-			<ion-item>
+			<ion-item class="inline-item">
 				<ion-label>Two Colour</ion-label>
 				<ion-radio [checked]="!settingsData.getDeckColours()" (click)="settingsData.setDeckColours(false)"></ion-radio>
 			</ion-item>
 
-			<ion-item>
+			<ion-item class="inline-item">
 				<ion-label>Four Colour</ion-label>
 				<ion-radio [checked]="settingsData.getDeckColours()" (click)="settingsData.setDeckColours(true)"></ion-radio>
 			</ion-item>
@@ -39,12 +39,12 @@
 				Five or Seven Card Stud
 			</ion-list-header>
 
-			<ion-item>
+			<ion-item class="inline-item">
 				<ion-label>Five Card</ion-label>
 				<ion-radio [checked]="settingsData.getFiveOrSevenMode() == 5" (click)="settingsData.setFiveOrSevenMode(false)"></ion-radio>
 			</ion-item>
 
-			<ion-item>
+			<ion-item class="inline-item">
 				<ion-label>Seven Card</ion-label>
 				<ion-radio [checked]="settingsData.getFiveOrSevenMode() == 7" (click)="settingsData.setFiveOrSevenMode(true)"></ion-radio>
 			</ion-item>
