@@ -54,11 +54,11 @@
 				{{ handRanks[rowNumber] }}:
 			</ion-col>
 			<ion-col class="card-hand-odds">
-				<ion-spinner [hidden]="!analyser.getNextCardOdds(rowNumber + 14) == null && numberOfCardsRemaining != 0"></ion-spinner>
+				<ion-spinner [hidden]="analyser.getNextCardOdds(rowNumber + 14) != null"></ion-spinner>
 				<span class="odds-text" [hidden]="!analyser.getNextCardOdds(0) || numberOfCardsRemaining == 0">{{ analyser.getNextCardOdds(rowNumber + 14) | number: '1.0-2' }}</span>
 			</ion-col>
 			<ion-col class="card-hand-odds">
-				<ion-spinner [hidden]="!analyser.getEndOfHandOdds(rowNumber + 14) == null && numberOfCardsRemaining != 0"></ion-spinner>
+				<ion-spinner [hidden]="analyser.getEndOfHandOdds(rowNumber + 14) != null"></ion-spinner>
 				<span class="odds-text" [hidden]="!analyser.getEndOfHandOdds(0) || numberOfCardsRemaining == 0">{{ analyser.getEndOfHandOdds(rowNumber + 14) | number: '1.0-2' }}</span>
 			</ion-col>
 			<ion-col class="spacer">
@@ -67,11 +67,11 @@
 				{{ handRanks[rowNumber + 1] }}:
 			</ion-col>
 			<ion-col class="card-hand-odds">
-				<ion-spinner [hidden]="!analyser.getNextCardOdds(rowNumber + 14 + 1) == null && numberOfCardsRemaining != 0"></ion-spinner>
+				<ion-spinner [hidden]="analyser.getNextCardOdds(rowNumber + 14 + 1) != null"></ion-spinner>
 				<span class="odds-text" [hidden]="!analyser.getNextCardOdds(0) || numberOfCardsRemaining == 0">{{ analyser.getNextCardOdds(rowNumber + 14 + 1) | number: '1.0-2' }}</span>
 			</ion-col>
 			<ion-col class="card-hand-odds">
-				<ion-spinner [hidden]="!analyser.getEndOfHandOdds(rowNumber + 14 + 1) == null && numberOfCardsRemaining != 0"></ion-spinner>
+				<ion-spinner [hidden]="analyser.getEndOfHandOdds(rowNumber + 14 + 1) != null"></ion-spinner>
 				<span class="odds-text" [hidden]="!analyser.getEndOfHandOdds(0) || numberOfCardsRemaining == 0">{{ analyser.getEndOfHandOdds(rowNumber + 14 + 1) | number: '1.0-2' }}</span>
 			</ion-col>
 		</ion-row>

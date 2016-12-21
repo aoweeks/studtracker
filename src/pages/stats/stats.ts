@@ -39,4 +39,8 @@ export class StatsPage {
 
   }
 
+
+  // debug(){
+  //   console.log(this.analyser.getEndOfHandOdds(0));
+  // }
 }

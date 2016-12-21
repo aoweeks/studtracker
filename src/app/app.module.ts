@@ -41,7 +41,7 @@ import { DoubleTapDirective } from '../directives/double-tap';
     AboutPage,
     AdvertPage
   ],
-  providers: [forwardRef(() => DeckModel), PlayerHandModel, SettingsData, DataService,
+  providers: [ PlayerHandModel, forwardRef(() => DeckModel), SettingsData, DataService,
               Storage, HandAnalyser, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}

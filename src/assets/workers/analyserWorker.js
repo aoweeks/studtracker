@@ -179,20 +179,25 @@ function calculateEndOfHandValues(currentHand, remainingDeck, cardsToGo) {
 	let handCombos = getCombinations(5, currentHand.length + cardsToGo);
 	let endOfHandValues = [];
 
+	console.log(combos.length);
+	//Arbitrary temp number til fix is implemented
+	if(combos.length < 20000){
+		for(let i = 0; i < combos.length; i++){
+			newHand = currentHand.slice(0);
+			
+			for(let j = 0; j < combos[i].length; j++){
+				let nextCard = remainingDeck[combos[i][j]];
+				newHand.push(nextCard);
+			}
 
-	for(let i = 0; i < combos.length; i++){
-		newHand = currentHand.slice(0);
-		
-		for(let j = 0; j < combos[i].length; j++){
-			let nextCard = remainingDeck[combos[i][j]];
-			newHand.push(nextCard);
+
+			endOfHandValues.push(findBestComboScore(newHand, handCombos));
 		}
 
+		return ( calculatePotentialHandOdds(endOfHandValues) );
 
-		endOfHandValues.push(findBestComboScore(newHand, handCombos));
-	}
-
-	return ( calculatePotentialHandOdds(endOfHandValues) );
+		//TEMP HACK "FIX"
+	} else { return Array<number>(22); }//[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; }
 }
 
 

@@ -220,8 +220,8 @@ export class HandAnalyser {
 
 	calculatePotentialHandValues(currentHand: CardModel[], cardsToGo: number): void {
 
-		this.nextCardOdds = Array(22);
-		this.endOfHandOdds = Array(22);
+		this.nextCardOdds = Array<number>(22);
+		this.endOfHandOdds = Array<number>(22);
 
 		if(this.workersRunning) this.nextCardWorker.terminate();
 		this.nextCardWorker = new Worker('../assets/workers/analyserWorker.js');

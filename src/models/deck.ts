@@ -12,7 +12,7 @@ export class DeckModel {
 
 
 	private cards: any[][] = new Array(0);
-
+	private oldCards: any[][] = new Array(0);
 
 	private suitOdds: number[] = [];
 	private rankOdds: number[] = [];
@@ -158,7 +158,18 @@ export class DeckModel {
 			}
 		}
 
+		//Trigger processing of odds for future hands
+	   //  let numberOfCardsRemaining = this.settingsData.getFiveOrSevenMode() - this.playerHand.getHandSize();
+	    
+	   //  if(numberOfCardsRemaining > 0){
+	  	// 	this.analyser.calculatePotentialHandValues(this.playerHand.getHand(), numberOfCardsRemaining);
+	  	// } else{
+	  	// 	this.analyser.calculateFullHandOdds(this.playerHand.getHand());
+	  	// }
+
+
 	}
+
 
 
 	getSuitOdds(suitPos: number): number {
