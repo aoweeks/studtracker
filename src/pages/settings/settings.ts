@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
+import { AppVersion } from 'ionic-native';
 import { SettingsData } from '../../providers/settings-data';
-import { AboutPage } from '../about/about.ts';
 
 /*
   Generated class for the Settings page.
@@ -15,14 +15,21 @@ import { AboutPage } from '../about/about.ts';
 })
 export class SettingsPage {
 
-  constructor(public navCtrl: NavController, public settingsData: SettingsData) {}
+  private versionNumber: number = null;
+
+  constructor(public navCtrl: NavController,
+              public settingsData: SettingsData,
+              private platform: Platform) {
+
+      if(this.platform.is('cordova')) {
+          AppVersion.getVersionNumber().then((s) => {
+          this.versionNumber = s;
+        })
+      }
+  }
 
   ionViewWillLeave(): void{
   	this.settingsData.saveData();
-  }
-
-  openAboutPage(){
-  	this.navCtrl.push(AboutPage);
   }
 
 }

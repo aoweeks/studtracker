@@ -8,8 +8,6 @@ import { SettingsPage } from '../settings/settings';
 
 import { StatsPage } from '../stats/stats';
 
-import { AdvertPage } from '../advert/advert';
-
 import { SettingsData } from '../../providers/settings-data';
 
 import { DeckModel } from '../../models/deck';
