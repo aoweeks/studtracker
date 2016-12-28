@@ -12,7 +12,6 @@ export class DeckModel {
 
 
 	private cards: any[][] = new Array(0);
-	private oldCards: any[][] = new Array(0);
 
 	private suitOdds: number[] = [];
 	private rankOdds: number[] = [];

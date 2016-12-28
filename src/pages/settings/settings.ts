@@ -15,7 +15,7 @@ import { SettingsData } from '../../providers/settings-data';
 })
 export class SettingsPage {
 
-  private versionNumber: number = null;
+  private versionNumber: any = "undefined";
 
   constructor(public navCtrl: NavController,
               public settingsData: SettingsData,
